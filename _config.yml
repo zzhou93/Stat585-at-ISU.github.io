@@ -27,4 +27,4 @@ collections:
     permalink: /blog-2019/:path
   topics:
     output: true
-    permalink: /blog/:path/
+    permalink: /blog-2019/:path/
