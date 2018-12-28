@@ -15,7 +15,7 @@ navigation:
 - text: Labs
   url: /labs.html
 - text: Blog
-  url: /blog
+  url: /blog-2019
   layout:
     - post
     - blog
