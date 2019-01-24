@@ -6,6 +6,7 @@ layout: post
 root: ../../../
 ---
 
+
 1. **Looking back at all of the team projects you have been involved in, describe the biggest mishap you had. Could that have been avoided 
 using git? How?**. 
 
@@ -27,4 +28,5 @@ I have read chapter 12 of Briyan's book, 'Connect RStudio to Git', which helped 
 GitHub via RStudio session itself. I was already familiar with `githubdesktop`, but it is useful to make changes in my local repository. 
 After I read this chapter of the book, I learned how to pull from and push to GitHub from RStudio. The steps to make that connection is 
 simple and now I can make local changes, save or commit via my RStudio session simply by modifying `README.md` file. 
+
 
