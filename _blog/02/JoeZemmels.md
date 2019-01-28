@@ -41,20 +41,8 @@ mojo %>%
 
 
 {% highlight text %}
-## # A tibble: 374 x 2
-##    Studio     totalGross
-##    <chr>           <dbl>
-##  1 10F          21854825
-##  2 25th Frame     136631
-##  3 26 Aries         7500
-##  4 5&2           8368619
-##  5 A23           2718133
-##  6 A24        4503924401
-##  7 AAE           5008549
-##  8 AaF           1388578
-##  9 Abk.           958985
-## 10 Abr.        109660079
-## # ... with 364 more rows
+##     totalGross
+## 1 1.011704e+12
 {% endhighlight %}
 
 As we can see, there are 374 different named studios in the dataset, too many to be very useful for a high-level analysis. To get only, say, the top 5 highest grossing studios, we can use the dplyr top_n function, which will apply a filter to our data based on a weight that we can define. We also need to be careful to remove all rows for each movie except for highest grossing entry, which is presumably the last week that it was in theaters, so as to avoid overrepresenting movies that were in the theaters for a long period of time.
@@ -69,6 +57,12 @@ mojo %>%
   summarise(totalGross=sum(`Total Gross`)) %>%
   top_n(5,totalGross) %>%
   ggplot(aes(x=Studio,weight=totalGross,fill=Studio)) + geom_bar()
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in FUN(X[[i]], ...): object 'Studio' not found
 {% endhighlight %}
 
 ![center](../figure/blog-2019/02/JoeZemmels-unnamed-chunk-3-1.png)
