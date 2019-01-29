@@ -1,0 +1,88 @@
+---
+title: "Split-apply-combine..."
+author: "Earl Hur"
+topic: "02"
+layout: post
+root: ../../../
+---
+
+
+
+1. **Which (base R) functions do you know that support the split-apply-combine strategy? In your opinion, are these sufficient - state why or why not?**. 
+
+As Hadley mentioned in his article, there are many other base function that support the split-apply-combine stragegy. Examples are apply(), sapply(), lapply() as an apply family and another one might be aggregate() function. In my opinion, these functions are sufficient and we can get our data cleaned with these functions. However, the issue with these base function might be their readability and efficience. dplyr() function is a great replacement with these functions that is a lot more efficient and easier to read. While the apply family functions are only applied to only one function, the dplyr() apply many functions in an arguement. More than that, this dplyr() function makes it a lot easier to read and understand the code.
+
+2. **Using a dataset of your choice, show (by including the split-apply-combine command(s) in your answer) how you can use the split-apply-combine strategy for a part of the data analysis.**.
+
+Below is a part of a shinyapp(https://earlhurstatistics.shinyapps.io/LAS_career/) from a STATCOM project. Liberal Arts and Science (LAS) Career Center requested us to summarise their data from people to people career fair. They were interested in how many companies attended to people to people career fair in each semester from 2013 to 2018. Moreover, they also wanted to see the trend of the number of registriation from 2013 to 2018. Using group_by() function, the data was grouped by the name of the companies. Using summarise() function, the number of registriation was computed easily.
+
+
+{% highlight r %}
+ptp <- read.csv("ptp.csv")
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning in file(file, "rt"): cannot open file 'ptp.csv': No such file or
+## directory
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in file(file, "rt"): cannot open the connection
+{% endhighlight %}
+
+
+
+{% highlight r %}
+sem_order <- c("Spring_13", "Fall_ 13", "Spring_14", "Fall_14", "Spring_15", "Fall_15", 
+               "Spring_16", "Fall_16", "Spring_17", "Fall_17", "Spring_18", "Fall_18")
+label <- c("Spring 13", "Fall 13", "Spring 14", "Fall 14", "Spring 15", "Fall 15", 
+           "Spring 16", "Fall 16", "Spring 17", "Fall 17", "Spring 18", "Fall 18")
+
+p1 <- ggplot(data=summarise(group_by(ptp, sem_name), tot_reg = length(registriation)), 
+                 aes(factor(sem_name, level = sem_order), 
+                     tot_reg, text = paste("Semester: ", sem_name, "<br>Number of Registriation: ", tot_reg))) + 
+      geom_line(aes(group=1, color="red"), size=1) + 
+      geom_point() +
+      scale_x_discrete(breaks=sem_order,
+                       labels=label) +
+      theme(panel.background = element_rect(fill = NA), 
+            panel.grid.major = element_line(colour = "grey"), 
+            panel.ontop = TRUE, 
+            plot.title = element_text(hjust = 0),
+            axis.text.y = element_text(angle = 90, hjust = .1), legend.position="none") + 
+      labs(title = "Number of Registriation from 2013 to 2018", x = "Semester", y = "Count total", size = NULL, color = NULL)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in group_by(ptp, sem_name): object 'ptp' not found
+{% endhighlight %}
+
+
+
+{% highlight r %}
+plotline <- ggplotly(p1, tooltip = "text", source = "lineplot")
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in ggplotly(p1, tooltip = "text", source = "lineplot"): object 'p1' not found
+{% endhighlight %}
+
+
+
+{% highlight r %}
+plotline
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in eval(expr, envir, enclos): object 'plotline' not found
+{% endhighlight %}

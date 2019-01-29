@@ -111,6 +111,14 @@ library(plyr)
 
 
 {% highlight text %}
+## The following objects are masked from 'package:plotly':
+## 
+##     arrange, mutate, rename, summarise
+{% endhighlight %}
+
+
+
+{% highlight text %}
 ## The following object is masked from 'package:maps':
 ## 
 ##     ozone
