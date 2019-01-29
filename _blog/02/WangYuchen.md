@@ -25,46 +25,9 @@ data<-data.frame(mpg)
 freq<- data %>% 
   group_by(year) %>% 
   count(class)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in UseMethod("as.quoted"): no applicable method for 'as.quoted' applied to an object of class "function"
-{% endhighlight %}
-
-
-
-{% highlight r %}
 freq$year <- freq$year %>% factor()
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in `$<-.data.frame`(`*tmp*`, year, value = structure(integer(0), .Label = character(0), class = "factor")): replacement has 0 rows, data has 1
-{% endhighlight %}
-
-
-
-{% highlight r %}
 freq %>% ggplot(aes(x=year, y=n, fill=class))+
   geom_bar(stat="identity",position="dodge")
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Don't know how to automatically pick scale for object of type function. Defaulting to continuous.
-## Don't know how to automatically pick scale for object of type function. Defaulting to continuous.
-## Don't know how to automatically pick scale for object of type function. Defaulting to continuous.
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error: Columns `x`, `y`, `fill` must be 1d atomic vectors or lists
-## [90mCall `rlang::last_error()` to see a backtrace[39m
 {% endhighlight %}
 
 ![center](../figure/blog-2019/02/WangYuchen-unnamed-chunk-1-1.png)

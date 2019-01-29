@@ -6,15 +6,6 @@ layout: post
 topic: '02'
 ---
 
-## Background:
-
-The `plyr` package has by now been replaced by other, even faster packages, but the idea of *Split, apply, combine* is as relevant as ever.
-
-Read the paper [The Split-Apply-Combine Strategy for Data Analysis](https://www.jstatsoft.org/article/view/v040i01) by Hadley Wickham.
-
-
-Write a blog post addressing the questions: 
-
 1. **Which (base R) functions do you know that support the split-apply-combine strategy? In your opinion, are these sufficient - state why or why not?**. 
 While there are probably many functions in base R that can use or apply part/all of the split-apply-combine strategy internally -such as with(), aggregate(), replicate(), sweep(), table(), some of the plotting functions, and I'm sure many of the functions that take data frames and arrays as inputs- the obvious answer here is the apply() family of functions as outlined by Hadley in the paper. The apply functions all split the data along a margin or variable, apply a function, then combine it back into a similar format for output. While these functions effectively apply the split-apply-combine paradigm, they don't necessarily allow us to control what the output will look like. This can cause trouble if our desired combined output has different dimension or format from the input, because some functions in R handle vectors differently from arrays or data frames or lists. We then need some additional lines of code to keep track of our formats and lengths, which complicates matters and makes generalization to other problems more difficult. The *ply functions in the plyr package help us control our results by clearly specifying the input/output format we want and allowing for an easy specification of the dimensions we want to split the data along.
 

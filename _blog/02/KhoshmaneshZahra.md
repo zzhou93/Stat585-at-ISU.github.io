@@ -79,6 +79,71 @@ _ddply_
 
 {% highlight r %}
 library(plyr)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## -------------------------------------------------------------------------
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## You have loaded plyr after dplyr - this is likely to cause problems.
+## If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
+## library(plyr); library(dplyr)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## -------------------------------------------------------------------------
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 
+## Attaching package: 'plyr'
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from 'package:maps':
+## 
+##     ozone
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from 'package:lubridate':
+## 
+##     here
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following objects are masked from 'package:dplyr':
+## 
+##     arrange, count, desc, failwith, id, mutate, rename, summarise,
+##     summarize
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from 'package:purrr':
+## 
+##     compact
+{% endhighlight %}
+
+
+
+{% highlight r %}
 fraction <- function(x) x/sum(x)
 newdf <- ddply(df, "Year", transform, failurerate=fraction(detectedFailures))
 head(newdf)

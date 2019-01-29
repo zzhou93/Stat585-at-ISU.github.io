@@ -34,10 +34,4 @@ freq %>% ggplot(aes(x=Class, y=total, fill=Survived))+
   geom_bar(stat="identity",position="dodge")
 {% endhighlight %}
 
-
-
-{% highlight text %}
-## Error in FUN(X[[i]], ...): object 'Class' not found
-{% endhighlight %}
-
 ![center](../figure/blog-2019/02/LiJing-unnamed-chunk-1-1.png)

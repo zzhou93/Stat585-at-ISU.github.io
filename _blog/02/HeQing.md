@@ -31,10 +31,7 @@ ddply(iris,.(Species),summarise,mean=mean(Petal.Length),sd=sd(Petal.Length))
 
 
 {% highlight text %}
-##      Species  mean        sd
-## 1     setosa 1.462 0.1736640
-## 2 versicolor 4.260 0.4699110
-## 3  virginica 5.552 0.5518947
+## Error in ddply(iris, .(Species), summarise, mean = mean(Petal.Length), : could not find function "ddply"
 {% endhighlight %}
 
 
