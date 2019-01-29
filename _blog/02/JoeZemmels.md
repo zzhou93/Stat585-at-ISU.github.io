@@ -71,7 +71,7 @@ mojo %>%
   ggplot(aes(x=Studio,weight=totalGross,fill=Studio)) + geom_bar()
 {% endhighlight %}
 
-![center](.figure/02/JoeZemmels/unnamed-chunk-3-1.png)
+![center](../figure/02/JoeZemmels/unnamed-chunk-3-1.png)
 
 As we can see, the Buena Vista studio, which was the original name for Walt Disney Studio Motion Pictures, has had the highest box office numbers by far. We can drill deeper into Buena Vista movies over time by applying another filter to the dataset.
 
@@ -86,7 +86,7 @@ mojo %>%
   ggplot(aes(x=Title,weight=`Total Gross`)) + geom_bar() + coord_flip()
 {% endhighlight %}
 
-![center](.figure/02/JoeZemmels/unnamed-chunk-4-1.png)
+![center](../figure/02/JoeZemmels/unnamed-chunk-4-1.png)
 
 As we can see, dplyr allows easy implementation of the split-apply-combine strategy for data analysis.
 

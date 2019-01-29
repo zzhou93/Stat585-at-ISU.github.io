@@ -30,7 +30,7 @@ freq %>% ggplot(aes(x=year, y=n, fill=class))+
   geom_bar(stat="identity",position="dodge")
 {% endhighlight %}
 
-![center](.figure/02/WangYuchen/unnamed-chunk-1-1.png)
+![center](../figure/02/WangYuchen/unnamed-chunk-1-1.png)
 
 
 

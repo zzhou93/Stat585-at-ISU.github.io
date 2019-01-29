@@ -97,7 +97,7 @@ Another question that one may have is: what is the relationship between wind and
 airquality %>% ggplot(aes(x = Wind, y = Temp)) + geom_point() + geom_smooth()
 {% endhighlight %}
 
-![center](.figure/02/AguilarOscar/unnamed-chunk-4-1.png)
+![center](../figure/02/AguilarOscar/unnamed-chunk-4-1.png)
 
 From the above graph, as overall, there is a negative relationship between wind and temperature.
 

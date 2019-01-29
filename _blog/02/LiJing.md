@@ -34,4 +34,4 @@ freq %>% ggplot(aes(x=Class, y=total, fill=Survived))+
   geom_bar(stat="identity",position="dodge")
 {% endhighlight %}
 
-![center](.figure/02/LiJing/unnamed-chunk-1-1.png)
+![center](../figure/02/LiJing/unnamed-chunk-1-1.png)
