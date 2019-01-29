@@ -89,7 +89,7 @@ midwest %>%
   labs(fill = "race")
 {% endhighlight %}
 
-![center](../figure/blog-2019/02/TiltonMiranda-unnamed-chunk-3-1.png)
+![center](.figure/02/TiltonMiranda/unnamed-chunk-3-1.png)
 
 To see whether there truly is disparity between race affluence, we compute the correlation between percent of non-white individuals in a state and the percent of people living in poverty, using the county-wise data within each state. We use group_by() to split and summarise() to apply the correlation function, and then display the output as one combined table to compare values. Ohio shows no correlation between race and poverty, but the other four states show decidedly positive correlations. Interestingly, Wisconsin has the largest correlation between non-white population and poverty of the states reported, and the correlation larger by quite a significant margin.
 

@@ -61,5 +61,5 @@ msleep %>%
   xlab("total sleep")
 {% endhighlight %}
 
-![center](../figure/blog-2019/02/EnglishLydia-unnamed-chunk-3-1.png)
+![center](.figure/02/EnglishLydia/unnamed-chunk-3-1.png)
 
