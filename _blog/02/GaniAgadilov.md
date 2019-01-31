@@ -68,13 +68,6 @@ head(mtcars)
 ## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1 TRUE
 ## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2 TRUE
 ## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1 TRUE
-##                   head.1
-## Mazda RX4           TRUE
-## Mazda RX4 Wag       TRUE
-## Datsun 710          TRUE
-## Hornet 4 Drive      TRUE
-## Hornet Sportabout   TRUE
-## Valiant             TRUE
 {% endhighlight %}
 
 

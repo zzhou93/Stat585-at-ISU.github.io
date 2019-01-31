@@ -7,9 +7,6 @@ root: ../../../
 ---
 
 
-{% highlight text %}
-## Error in library(googledrive): there is no package called 'googledrive'
-{% endhighlight %}
 
 1. **Which (base R) functions do you know that support the split-apply-combine strategy? In your opinion, are these sufficient - state why or why not?**. 
 
@@ -34,13 +31,13 @@ p1 <- ggplot(data=summarise(group_by(ptp, sem_name), tot_reg = length(registriat
             plot.title = element_text(hjust = 0),
             axis.text.y = element_text(angle = 90, hjust = .1), legend.position="none") + 
       labs(title = "Number of Registriation from 2013 to 2018", x = "Semester", y = "Count total", size = NULL, color = NULL)
-    
-plotline <- ggplotly(p1, tooltip = "text", source = "lineplot")
-plotline
+ 
+p1   
 {% endhighlight %}
 
+![center](../figure/02/EarlHur/unnamed-chunk-2-1.png)
 
-
-{% highlight text %}
-## Error in (function (url = NULL, file = "webshot.png", vwidth = 992, vheight = 744, : webshot.js returned failure value: 11
+{% highlight r %}
+#plotline <- ggplotly(p1, tooltip = "text", source = "lineplot")
+#plotline
 {% endhighlight %}

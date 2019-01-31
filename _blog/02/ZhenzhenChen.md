@@ -24,7 +24,7 @@ attach(chickwts)
 
 
 {% highlight text %}
-## The following object is masked from PlantGrowth:
+## The following object is masked from PlantGrowth (pos = 3):
 ## 
 ##     weight
 {% endhighlight %}
@@ -33,6 +33,38 @@ attach(chickwts)
 
 {% highlight text %}
 ## The following objects are masked from chickwts (pos = 5):
+## 
+##     feed, weight
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from PlantGrowth (pos = 6):
+## 
+##     weight
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following objects are masked from chickwts (pos = 8):
+## 
+##     feed, weight
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from PlantGrowth (pos = 9):
+## 
+##     weight
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following objects are masked from chickwts (pos = 11):
 ## 
 ##     feed, weight
 {% endhighlight %}
