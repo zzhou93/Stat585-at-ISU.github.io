@@ -17,6 +17,11 @@ Write a blog post addressing the questions:
 2. **Using a dataset of your choice, show (by including the split-apply-combine command(s) in your answer) how you can use the split-apply-combine strategy for a part of the data analysis.**
 
     
+    {% highlight r %}
+    library(tidyverse)
+    {% endhighlight %}
+    
+    
     
     {% highlight r %}
     data("USArrests")
