@@ -30,7 +30,7 @@ attach(PlantGrowth)
 
 
 {% highlight text %}
-## The following objects are masked from PlantGrowth (pos = 5):
+## The following objects are masked from PlantGrowth (pos = 6):
 ## 
 ##     group, weight
 {% endhighlight %}
@@ -54,7 +54,7 @@ attach(PlantGrowth)
 
 
 {% highlight text %}
-## The following object is masked from chickwts (pos = 11):
+## The following object is masked from chickwts (pos = 12):
 ## 
 ##     weight
 {% endhighlight %}
@@ -62,7 +62,7 @@ attach(PlantGrowth)
 
 
 {% highlight text %}
-## The following objects are masked from PlantGrowth (pos = 12):
+## The following objects are masked from PlantGrowth (pos = 13):
 ## 
 ##     group, weight
 {% endhighlight %}
@@ -70,7 +70,7 @@ attach(PlantGrowth)
 
 
 {% highlight text %}
-## The following object is masked from chickwts (pos = 14):
+## The following object is masked from chickwts (pos = 15):
 ## 
 ##     weight
 {% endhighlight %}
@@ -78,7 +78,7 @@ attach(PlantGrowth)
 
 
 {% highlight text %}
-## The following objects are masked from PlantGrowth (pos = 15):
+## The following objects are masked from PlantGrowth (pos = 16):
 ## 
 ##     group, weight
 {% endhighlight %}
@@ -86,7 +86,23 @@ attach(PlantGrowth)
 
 
 {% highlight text %}
-## The following object is masked from chickwts (pos = 17):
+## The following object is masked from chickwts (pos = 18):
+## 
+##     weight
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following objects are masked from PlantGrowth (pos = 19):
+## 
+##     group, weight
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from chickwts (pos = 21):
 ## 
 ##     weight
 {% endhighlight %}
