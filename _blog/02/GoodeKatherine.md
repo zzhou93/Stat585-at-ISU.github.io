@@ -38,6 +38,12 @@ weather <- read_csv("https://raw.githubusercontent.com/goodekat/datafun/master/a
   select(-prcp, -tobs)
 {% endhighlight %}
 
+
+
+{% highlight text %}
+## Error in select(., -prcp, -tobs): unused arguments (-prcp, -tobs)
+{% endhighlight %}
+
 The first six rows of the data are shown in the table below. The first variable is where the observation was taken ("Oshkosh, WI" or "Ames, IA"). The next three variables are the year, month, and day of the observation. The remainder of the variables are defined as follows by the NOAA documentation. 
 
 - TMAX: Maximum temperature

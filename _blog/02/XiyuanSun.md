@@ -8,7 +8,9 @@ root: ../../../
 
 1. **Which (base R) functions do you know that support the split-apply-combine strategy? In your opinion, are these sufficient - state why or why not?**. 
 
-According to Hadley's paper, in base R, we can tackle this problem with nested loops, or with the apply family of functions. The main disadvantages of the loops is that there is a lot of book-keeping code: the size of the array is hard coded in multiple places and we need to create the output structures before filing them with data. The apply functions simplify the task, but there is not a straightforward way to go from the 2d array of models to the 3d array of residuals. 
+According to Hadley's paper, in base R, we can tackle this problem with nested loops, or with the apply family of functions. There are some base `R` functions that support the split-apply-combine strategy such as `subset()`, `split()`, `by()`, `apply()`, `sapply()`, `lapply()`, `tapply()`, `aggregate()`, `rbind()`, and `cbind()`. These functions can tackle any task  as `plyr`.
+
+The main disadvantages of the loops is that there is a lot of book-keeping code: the size of the array is hard coded in multiple places and we need to create the output structures before filing them with data. The apply functions simplify the task, but there is not a straightforward way to go from the 2d array of models to the 3d array of residuals. 
 
 
 2. **Using a dataset of your choice, show (by including the split-apply-combine command(s) in your answer) how you can use the split-apply-combine strategy for a part of the data analysis.**
@@ -90,34 +92,6 @@ library(plyr)
 
 {% highlight r %}
 library(MASS)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'MASS'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:plotly':
-## 
-##     select
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:dplyr':
-## 
-##     select
-{% endhighlight %}
-
-
-
-{% highlight r %}
 library(dplyr)
 library(ggplot2)
 
@@ -177,14 +151,19 @@ print(sales_data)
 #step3: combine the results into a datastructure
 sales_data%>%
   group_by(color)%>%
-  summarise(totalSales = sum(sales),medianTrans=median(transactions),count=n())
+  dplyr::summarize(totalSales = sum(sales),medianTrans=median(transactions),count=n())
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## Error: This function should not be called directly
-## [90mCall `rlang::last_error()` to see a backtrace[39m
+## # A tibble: 4 x 4
+##   color  totalSales medianTrans count
+##   <fct>       <dbl>       <dbl> <int>
+## 1 Black          23         4       4
+## 2 Blue           35         7       5
+## 3 Red            51         9       5
+## 4 Yellow         39         7.5     4
 {% endhighlight %}
 
 
