@@ -1,12 +1,10 @@
 ---
 title: "Ethics and Reproducibility..."
-author: "Yudi Zhang"
+author: "Stephanie Reinders"
 topic: "03"
 layout: post
 root: ../../../
 ---
-
-## Background:
 
 ## Prompt:
 
@@ -26,11 +24,23 @@ Read the paper [Ten Simple Rules for Reproducible Computational Research](https:
 Write a blog post addressing the questions: 
 
 1. **Pick one of the papers Retraction Watch features on their website and describe what went wrong**. 
-I first read the article in FiveThirtyEight, I was pretty shocked since I thought such beguiling events should not happened in the academic fields. Everything was not real, from data to methods and results, graduate students should not do that purely for gaining fame. And academic cheating seems happen quite often judging from the database on [Retraction Watch].
 
-I looked at the leaderboard on The Retraction Watch and picked the first one, i.e. Yoshitaka Fujii, who has been called the biggest fabricator. Nothing was real in his research, only 3 of 212 published papers has reliable data and 171 papers were deemed to have been wholly fabricated. I think his tutor recognized what he was doing but did not take any action, which is pathetic. Fujii used these "paper" to receice fame and grants and some titles, but what he has published could be used in the clinical trails, which is matter of human's life. It reminded of the retraction happened on Nature, Dr. Anversa published an article about stem cells, many scholars and institutions spent a huge amout of money to study his findings, but it turned out everything was not real. Wasted a lot of time and money.
+Retracted Paper: Wakefield, Andrew J., Simon H. Murch, Andrew Anthony, John Linnell, David M. Casson, Mohsin Malik, Mark Berelowitz et al. "RETRACTED: Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children." (1998): 637-641.
+
+The [Reaction Watch](http://retractiondatabase.org/RetractionSearch.aspx#?auth%3dWakefield%252c%2bAndrew%2bJ) database entry for Wakefield's paper lists the following reasons for retraction:
+
+* Falsification/Fabrication of Data
+* Investigation by Company/Institution
+* Investigation by Third Party
+* Lack of Approval from Company/Institution
+* Lack of IRB/IACUC Approval
+* Manipulation of Results
+* Upgrade/Update of Prior Notice
+
 
 2. **After reading the paper by Sandve et al. describe which rule you are most likely to follow and why, and which rule you find the hardest to follow and will likely not follow in your future projects.**
-I think Rule 5 is what I am going to follow. Since I am using C a lot recently, and it is quite easy to make bugs, it is better to incorporate debug outputs in the middle the code, so once something wrong happened, I can easily track by looking at the debug outputs.
 
-Maybe Rule 1 is the unlikely follow onw for me. I changed the command line a lot when running C, perhaps, sometimes I forgot to record the dataset I use. Well, I think this one can be followed if I write some code in the program.
+I started following "Rule 1: For Every Result, Keep Track of How It Was Produced" pretty much as soon as I started my steganalysis research. My motivation for doing so at the time was simply so that I would remember which Matlab script, inputs, and parameters I used to generate a specific set of results. Of course, now I realize that following this rule is important for reproducability as well.
+
+I do not plan to follow "Rule 3: Archive the Exact Versions of All External Programs Used." Even if I archived the exact version of Matlab that I use, I couldn't make it available to other researchers to use because Matlab is not open source. 
+
