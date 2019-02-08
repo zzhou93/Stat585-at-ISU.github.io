@@ -21,6 +21,7 @@ Write a blog post addressing the questions:
     
     
     {% highlight r %}
+    library(lubridate)
     library(dplyr)
     library(ggplot2)
     
@@ -31,12 +32,6 @@ Write a blog post addressing the questions:
       stat_smooth() +
       labs(y = "unemployment rate") +
       theme_bw()
-    {% endhighlight %}
-    
-    
-    
-    {% highlight text %}
-    ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
     {% endhighlight %}
     
     ![center](../figure/04/QiaoYang/unnamed-chunk-1-1.png)
