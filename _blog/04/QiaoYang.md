@@ -19,8 +19,8 @@ Write a blog post addressing the questions:
     
     I use the `economics` dataset in `ggplot2` package. This dataset was produced from US economic time series data available from http://research.stlouisfed.org/fred2.
     
-    
-    {% highlight r %}
+
+{% highlight r %}
     library(lubridate)
     library(dplyr)
     library(ggplot2)
@@ -32,11 +32,11 @@ Write a blog post addressing the questions:
       stat_smooth() +
       labs(y = "unemployment rate") +
       theme_bw()
-    {% endhighlight %}
-    
-    ![center](../figure/04/QiaoYang/unnamed-chunk-1-1.png)
-    
-    {% highlight r %}
+{% endhighlight %}
+
+![center](../figure/04/QiaoYang/unnamed-chunk-1-1.png)
+
+{% highlight r %}
     group_by(dat, month) %>%
       summarise(unemployrate = mean(unemployrate)) %>%
       ggplot(aes(x = month, y = unemployrate)) +
@@ -44,8 +44,8 @@ Write a blog post addressing the questions:
       labs(y = "unemployment rate") +
       scale_x_continuous(breaks = scales::pretty_breaks()) +
       theme_bw()
-    {% endhighlight %}
-    
-    ![center](../figure/04/QiaoYang/unnamed-chunk-1-2.png)
+{% endhighlight %}
+
+![center](../figure/04/QiaoYang/unnamed-chunk-1-2.png)
     
     We plot the unemployment rate vs. date. From the plot, we can see the trend of unemployment rate, increasing before 1985, decreasing between 1985 and 2000, then incresing after 2000. And we can also see the monthly unemployment rate from the 2nd plot, which has the highest unemployment rate in June.
