@@ -18,13 +18,14 @@ Write a blog post addressing the questions:
 
 - Describe what intervals, durations, periods, and instants are, and give one example for each that shows why we need these distinctions.
 
-Durations, an exact number of seconds. Durations always record the time span in seconds. If we want to compute the seconds for two months Feb and Mar, then using Periods would do 31*2*2600, which is wrong, that is when we use duration.
-Periods, human units like weeks and months. When there is a leap year, periods can show us what we expected. For example, ymd("2016-01-01") + years(1) is "2017-01-01", but if using durations, it is "2016-12-31".
-Intervals, a starting and ending point. Intervals give us a more accurate measurement, e.g. if we want to know number of days in year 2016, Intervals can return 366, not periods.
-Instants: a specific instant in time. For example, if a murder happened, the police want to know the exact time, that's when we use instants.
+- Durations: an exact number of seconds. Durations always record the time span in seconds. If we want to compute the seconds for two months Feb and Mar, then using Periods would do 31*2*2600, which is wrong, that is when we use duration.
+- Periods: human units like weeks and months. When there is a leap year, periods can show us what we expected. For example, ymd("2016-01-01") + years(1) is "2017-01-01", but if using durations, it is "2016-12-31".
+- Intervals: a starting and ending point. Intervals give us a more accurate measurement, e.g. if we want to know number of days in year 2016, Intervals can return 366, not periods.
+- Instants: a specific instant in time. For example, if a murder happened, the police want to know the exact time, that's when we use instants.
 
 - The `ggplot2` package works seamlessy with lubridate. Find a data set with dates and/or times, use lubridate to work with the dates/times, then plot a time-related aspect of the data and describe it.  
-The following dataset contains wind speed and direction at some time in every day in year 2007. Plot the averge wind speed each day in that year.
+
+The following dataset contains wind speed and direction at the same location, at some time in year 2007. Plot the averge wind speed each day in that year. We can see in Jan and Dec, wind speed tends to be higher. So look at the wind direction and speed, it is pretty interesting to find that the wind basically came from all over the directions.
 
 
 {% highlight r %}
@@ -45,7 +46,29 @@ wind <- buoy(dataset = 'cwind', buoyid = 46085)
 
 {% highlight r %}
 wind <- wind$data
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in eval(expr, envir, enclos): object 'wind' not found
+{% endhighlight %}
+
+
+
+{% highlight r %}
 wind$time <- ymd_hms(wind$time)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in lapply(list(...), .num_to_date): object 'wind' not found
+{% endhighlight %}
+
+
+
+{% highlight r %}
 wind %>% 
   mutate(date = date(time)) %>% 
   group_by(date) %>% 
@@ -60,5 +83,29 @@ wind %>%
 
 
 {% highlight text %}
-## Error in UseMethod("mutate_"): no applicable method for 'mutate_' applied to an object of class "list"
+## Error in eval(lhs, parent, parent): object 'wind' not found
+{% endhighlight %}
+
+
+
+{% highlight r %}
+wind %>% 
+  mutate(date = date(time), t = strftime(time, format="%H:%M:%S") ) %>% 
+  filter(date == "2007-12-31") %>% 
+  ggplot(aes(x = t , y = wind_spd, angle = wind_dir, 
+             radius = scales::rescale(wind_spd, c(.2, .8)))) +
+  geom_raster() +
+  geom_spoke(arrow = arrow(length = unit(.05, 'inches'))) + 
+  coord_equal(expand = 0) + 
+  ggtitle("Wind Direction in Dec") +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) +
+  theme(plot.title = element_text(hjust = 0.5))
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in eval(lhs, parent, parent): object 'wind' not found
 {% endhighlight %}
