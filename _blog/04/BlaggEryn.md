@@ -29,7 +29,7 @@ date()
 
 
 {% highlight text %}
-## [1] "Tue Feb 12 20:44:01 2019"
+## [1] "Wed Feb 13 14:14:25 2019"
 {% endhighlight %}
 
 durations: an exact number of seconds. eg 

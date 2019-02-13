@@ -46,6 +46,12 @@ Write a blog post addressing the questions:
       theme_bw()
 {% endhighlight %}
 
+
+
+{% highlight text %}
+## Error: Column `x` must be a 1d atomic vector or a list
+{% endhighlight %}
+
 ![center](../figure/04/QiaoYang/unnamed-chunk-1-2.png)
     
     We plot the unemployment rate vs. date. From the plot, we can see the trend of unemployment rate, increasing before 1985, decreasing between 1985 and 2000, then incresing after 2000. And we can also see the monthly unemployment rate from the 2nd plot, which has the highest unemployment rate in June.

@@ -22,7 +22,7 @@ root: ../../../
 
 
 {% highlight text %}
-## [1] "2019-02-12 20:44:14 CST"
+## [1] "2019-02-13 14:14:59 CST"
 {% endhighlight %}
 
 
@@ -87,7 +87,17 @@ The data I used is statistics of each Los Angeles Lakers basketball game in the 
 {% highlight r %}
 data("lakers")
 lakers %>% filter(player %in% c("Pau Gasol","Kobe Bryant"),etype=="shot") %>% mutate(Date=ymd(date)) %>% dplyr::select(Date,player,points) %>% group_by(Date,player) %>% summarise(rate=sum(points>0)/n(),Total_points=sum(points))-> lakers_summ
+{% endhighlight %}
 
+
+
+{% highlight text %}
+## Error: This function should not be called directly
+{% endhighlight %}
+
+
+
+{% highlight r %}
 lakers_summ %>% ggplot(aes(x=Date, y=rate)) + geom_line(aes(color=player))+ geom_smooth(aes(color=player)) + scale_x_date(date_labels = '%Y/%m/%d') +  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + labs(y="Success rate")
 {% endhighlight %}
 

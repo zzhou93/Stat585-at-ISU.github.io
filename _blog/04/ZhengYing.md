@@ -39,7 +39,7 @@ today() %--% next_year
 
 
 {% highlight text %}
-## [1] 2019-02-12 UTC--2020-02-12 UTC
+## [1] 2019-02-13 UTC--2020-02-13 UTC
 {% endhighlight %}
 
 - **durations**

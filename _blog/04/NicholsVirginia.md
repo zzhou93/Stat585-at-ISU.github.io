@@ -78,7 +78,11 @@ flights %>%
   geom_line(aes(color = origin))
 {% endhighlight %}
 
-![center](../figure/04/NicholsVirginia/time plot-1.png)
+
+
+{% highlight text %}
+## Error: This function should not be called directly
+{% endhighlight %}
 
 The months are labeled weird, I'd rather have the words. 
 
@@ -93,7 +97,11 @@ flights %>%
   geom_point(aes(color = origin))
 {% endhighlight %}
 
-![center](../figure/04/NicholsVirginia/time plot 2-1.png)
+
+
+{% highlight text %}
+## Error: This function should not be called directly
+{% endhighlight %}
 
 But now it won't connect them with a line. Oh well. At least they are in the right order. 
 

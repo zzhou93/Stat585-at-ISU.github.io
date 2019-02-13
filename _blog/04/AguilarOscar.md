@@ -18,9 +18,14 @@ I used stock data related to Apple and Microsoft during 2018.
 
 
 {% highlight r %}
+## R-packages
+library(lubridate)
+library(tidyverse)
+
+## Here we read the data
 stocks.data <- read.csv('https://raw.githubusercontent.com/oscarm524/DataSets/master/stock_data.csv')
 
-## Here we conver factor into date
+## Here we convert factor into date
 stocks.data <- stocks.data %>% mutate(Date = as.Date(as.character(Date)))
 stocks.data %>% head
 {% endhighlight %}
@@ -75,14 +80,8 @@ stocks.data %>% select(AAPL.Adjusted, Day) %>% group_by(Day) %>% summarise(Avg.P
 
 
 {% highlight text %}
-## # A tibble: 5 x 2
-##   Day   Avg.Price
-##   <ord>     <dbl>
-## 1 Mon        187.
-## 2 Tue        187.
-## 3 Wed        187.
-## 4 Thu        187.
-## 5 Fri        187.
+##   Avg.Price
+## 1   187.106
 {% endhighlight %}
 
 
@@ -95,14 +94,8 @@ stocks.data %>% select(MSFT.Adjusted, Day) %>% group_by(Day) %>% summarise(Avg.P
 
 
 {% highlight text %}
-## # A tibble: 5 x 2
-##   Day   Avg.Price
-##   <ord>     <dbl>
-## 1 Mon       100. 
-## 2 Tue       100. 
-## 3 Wed       100.0
-## 4 Thu       100. 
-## 5 Fri       100.
+##   Avg.Price
+## 1  100.2247
 {% endhighlight %}
 
 From the above output, there is an obvious relationship betweent the average adjusted closing price and the day of the week. 

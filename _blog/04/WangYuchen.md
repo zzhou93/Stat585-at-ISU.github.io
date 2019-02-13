@@ -100,6 +100,17 @@ ames_18 <-ames_weather %>%
   summarize(
         count = n(),
         mean_wind = mean (wind))
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error: This function should not be called directly
+{% endhighlight %}
+
+
+
+{% highlight r %}
 ames_18 %>%
   ggplot(aes(x=as.factor(month),y=mean_wind,size = count,color = count)) + geom_point(position = "dodge") + labs (title = "Clear Days in 2018", x = "Month", y = "MeanWind" ) 
 {% endhighlight %}

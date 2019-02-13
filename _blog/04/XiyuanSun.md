@@ -101,55 +101,8 @@ start_2012 + years(1)
 library(lubridate) 
 library(ggplot2)  
 library(scales)   
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'scales'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:purrr':
-## 
-##     discard
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:readr':
-## 
-##     col_factor
-{% endhighlight %}
-
-
-
-{% highlight r %}
 library(gridExtra) 
-{% endhighlight %}
 
-
-
-{% highlight text %}
-## 
-## Attaching package: 'gridExtra'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:dplyr':
-## 
-##     combine
-{% endhighlight %}
-
-
-
-{% highlight r %}
 # daily HARV met data, 2009-2011
 harMetDaily.09.11 <- read.csv(
   file="NEON-DS-Met-Time-Series/HARV/FisherTower-Met/Met_HARV_Daily_2009_2011.csv",

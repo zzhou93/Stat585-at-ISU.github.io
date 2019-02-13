@@ -20,34 +20,6 @@ We use the economics dataset built into ggplot2 and plot the unemployment rate b
 {% highlight r %}
 library(lubridate)
 library(magrittr)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'magrittr'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:purrr':
-## 
-##     set_names
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:tidyr':
-## 
-##     extract
-{% endhighlight %}
-
-
-
-{% highlight r %}
 library(tidyverse)
 
 data <- economics
@@ -62,6 +34,18 @@ ggplot(data, aes(x = date, y = unemploy)) +
 {% highlight r %}
 data %>% group_by(year) %>% summarise(avg = mean(unemploy)) %>%
   ggplot(., aes(x = year, y = avg)) + geom_point() + geom_line() +theme_bw()
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Don't know how to automatically pick scale for object of type function. Defaulting to continuous.
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error: Column `x` must be a 1d atomic vector or a list
 {% endhighlight %}
 
 ![center](../figure/04/TiltonMiranda/unnamed-chunk-1-2.png)

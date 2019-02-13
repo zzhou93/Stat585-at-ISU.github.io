@@ -46,29 +46,7 @@ wind <- buoy(dataset = 'cwind', buoyid = 46085)
 
 {% highlight r %}
 wind <- wind$data
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in eval(expr, envir, enclos): object 'wind' not found
-{% endhighlight %}
-
-
-
-{% highlight r %}
 wind$time <- ymd_hms(wind$time)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in lapply(list(...), .num_to_date): object 'wind' not found
-{% endhighlight %}
-
-
-
-{% highlight r %}
 wind %>% 
   mutate(date = date(time)) %>% 
   group_by(date) %>% 
@@ -83,7 +61,7 @@ wind %>%
 
 
 {% highlight text %}
-## Error in eval(lhs, parent, parent): object 'wind' not found
+## Error in UseMethod("group_by_"): no applicable method for 'group_by_' applied to an object of class "list"
 {% endhighlight %}
 
 
@@ -107,5 +85,5 @@ wind %>%
 
 
 {% highlight text %}
-## Error in eval(lhs, parent, parent): object 'wind' not found
+## Error in UseMethod("filter_"): no applicable method for 'filter_' applied to an object of class "list"
 {% endhighlight %}

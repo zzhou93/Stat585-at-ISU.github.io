@@ -34,6 +34,12 @@ totalpointsO <- lakersmod %>% filter(team!='LAL')%>%  group_by(date) %>% summari
 games <- totalpointsL %>% left_join(totalpointsO, by=c("date"="date"))
 {% endhighlight %}
 
+
+
+{% highlight text %}
+## Error: `by` can't contain join column `date` which is missing from LHS
+{% endhighlight %}
+
 Now that we have the final scores, we can get further information about wins/losses and margin of victory/defeat. We can also find the time between games by using the days() function from lubridate to find the length of the period between successive games.
 
 {% highlight r %}

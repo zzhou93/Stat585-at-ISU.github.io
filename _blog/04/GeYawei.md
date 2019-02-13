@@ -53,14 +53,6 @@ dweeks(1) - dseconds(10000)
 
 
 {% highlight text %}
-## Note: method with signature 'Duration#ANY' chosen for function '-',
-##  target signature 'Duration#Duration'.
-##  "ANY#Duration" would also be valid
-{% endhighlight %}
-
-
-
-{% highlight text %}
 ## [1] "594800s (~6.88 days)"
 {% endhighlight %}
 
@@ -105,7 +97,7 @@ today() %--% (today() + years(5))
 
 
 {% highlight text %}
-## [1] 2019-02-12 UTC--2024-02-12 UTC
+## [1] 2019-02-13 UTC--2024-02-13 UTC
 {% endhighlight %}
 
 

@@ -44,5 +44,9 @@ rain %>%
   scale_x_date(date_labels = "%b")
 {% endhighlight %}
 
-![center](../figure/04/LiJing/unnamed-chunk-1-1.png)
+
+
+{% highlight text %}
+## Error in paste0("2019-", month, "-01"): cannot coerce type 'closure' to vector of type 'character'
+{% endhighlight %}
 This plot shows the monthly precipitation from Jan-2003 to Dec-2013 at Boulder, Colorado. It seems the precipitation has large difference for each year. The amount in winter and summer are lower than spring and fall.

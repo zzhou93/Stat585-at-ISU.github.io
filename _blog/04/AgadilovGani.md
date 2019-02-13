@@ -19,39 +19,13 @@ Instant. An instant is a specific moment in time. For instance, February 11th, 2
 
 {% highlight r %}
 require(lubridate)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: lubridate
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'lubridate'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:base':
-## 
-##     date
-{% endhighlight %}
-
-
-
-{% highlight r %}
 today()
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## [1] "2019-02-12"
+## [1] "2019-02-13"
 {% endhighlight %}
 
 
@@ -63,7 +37,7 @@ now()
 
 
 {% highlight text %}
-## [1] "2019-02-12 20:43:59 CST"
+## [1] "2019-02-13 14:14:24 CST"
 {% endhighlight %}
 
 
@@ -75,7 +49,7 @@ date()
 
 
 {% highlight text %}
-## [1] "Tue Feb 12 20:43:59 2019"
+## [1] "Wed Feb 13 14:14:24 2019"
 {% endhighlight %}
 
 Interval. An interval is a span of time that occurs between two specific instants. For example, how many weeks from February 11th in 2019 to February 11th in 2020. Intervals have a starting and ending point.
@@ -114,7 +88,7 @@ age
 
 
 {% highlight text %}
-## Time difference of 11180 days
+## Time difference of 11181 days
 {% endhighlight %}
 
 
@@ -126,7 +100,7 @@ as.duration(age)
 
 
 {% highlight text %}
-## [1] "965952000s (~30.61 years)"
+## [1] "966038400s (~30.61 years)"
 {% endhighlight %}
 
 Period. Periods record a time span in units larger than seconds, such as years, months, weeks, days, hours, and minutes. For example, period of 5 weeks is 35 days 0 hours 0 minutes 0 seconds.
@@ -163,39 +137,6 @@ I have used the dataset AirPassengers which indicates a number of international 
 library(lubridate)
 library(ggplot2)
 library(tidyverse)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## ── Attaching packages ─────────────────────────────────────────────── tidyverse 1.2.1 ──
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## ✔ tibble  1.4.2     ✔ purrr   0.3.0
-## ✔ tidyr   0.8.2     ✔ dplyr   0.7.8
-## ✔ readr   1.1.1     ✔ stringr 1.3.1
-## ✔ tibble  1.4.2     ✔ forcats 0.3.0
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## ── Conflicts ────────────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ lubridate::as.difftime() masks base::as.difftime()
-## ✖ lubridate::date()        masks base::date()
-## ✖ dplyr::filter()          masks stats::filter()
-## ✖ lubridate::intersect()   masks base::intersect()
-## ✖ dplyr::lag()             masks stats::lag()
-## ✖ lubridate::setdiff()     masks base::setdiff()
-## ✖ lubridate::union()       masks base::union()
-{% endhighlight %}
-
-
-
-{% highlight r %}
 library(ggfortify)
 {% endhighlight %}
 
@@ -226,8 +167,14 @@ str(data)
 
 
 {% highlight text %}
-## function (..., list = character(), package = NULL, lib.loc = NULL, 
-##     verbose = getOption("verbose"), envir = .GlobalEnv)
+## Classes 'tbl_df', 'tbl' and 'data.frame':	574 obs. of  7 variables:
+##  $ date    : Date, format: "1967-07-01" "1967-08-01" ...
+##  $ pce     : num  507 510 516 513 518 ...
+##  $ pop     : int  198712 198911 199113 199311 199498 199657 199808 199920 200056 200208 ...
+##  $ psavert : num  12.5 12.5 11.7 12.5 12.5 12.1 11.7 12.2 11.6 12.2 ...
+##  $ uempmed : num  4.5 4.7 4.6 4.9 4.7 4.8 5.1 4.5 4.1 4.6 ...
+##  $ unemploy: int  2944 2945 2958 3143 3066 3018 2878 3001 2877 2709 ...
+##  $ year    : num  1967 1967 1967 1967 1967 ...
 {% endhighlight %}
 
 
@@ -242,7 +189,13 @@ data %>%
 
 
 {% highlight text %}
-## Error in UseMethod("mutate_"): no applicable method for 'mutate_' applied to an object of class "function"
+## Warning: Unknown or uninitialised column: 'Index'.
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in as.POSIXlt.default(x, tz = tz(x)): do not know how to convert 'x' to class "POSIXlt"
 {% endhighlight %}
 
 
@@ -259,9 +212,34 @@ data %>%
 
 
 {% highlight text %}
-## Error: You're passing a function as global data.
-## Have you misspelled the `data` argument in `ggplot()`
+## Warning: Unknown or uninitialised column: 'Data'.
 {% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning: Unknown or uninitialised column: 'Index'.
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning: Unknown or uninitialised column: 'Data'.
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning: Unknown or uninitialised column: 'Index'.
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error: Aesthetics must be either length 1 or the same as the data (574): y, x
+{% endhighlight %}
+
+![center](../figure/04/AgadilovGani/unnamed-chunk-5-1.png)
 
 
 

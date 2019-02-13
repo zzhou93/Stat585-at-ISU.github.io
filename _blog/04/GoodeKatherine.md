@@ -53,7 +53,7 @@ as.duration(end - start)
 
 
 {% highlight text %}
-## [1] "0.0135669708251953s"
+## [1] "0.0116469860076904s"
 {% endhighlight %}
 
 #### Periods
@@ -69,7 +69,7 @@ ymd_hms("2019-09-08 00:00:00") - now()
 
 
 {% highlight text %}
-## Time difference of 206.886 days
+## Time difference of 206.1564 days
 {% endhighlight %}
 
 ## Question 2
@@ -140,7 +140,11 @@ iowa_tornados %>%
        title = "Number of Tornados in a Month per Year")
 {% endhighlight %}
 
-![center](../figure/04/GoodeKatherine/unnamed-chunk-8-1.png)
+
+
+{% highlight text %}
+## Error in count(., Year, Month): object 'Year' not found
+{% endhighlight %}
 
 <br>
 
@@ -160,7 +164,11 @@ iowa_tornados %>%
        title = "Number of Tornados in an Hour per Year")
 {% endhighlight %}
 
-![center](../figure/04/GoodeKatherine/unnamed-chunk-9-1.png)
+
+
+{% highlight text %}
+## Error in count(., Year, Hour): object 'Year' not found
+{% endhighlight %}
 
 <br>
 
@@ -204,6 +212,14 @@ iowa_tornados %>%
        y = "Total Number",
        title = "Total Number of Fatalities and Injuries by Year") + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error: At least one layer must contain all faceting variables: `Variable`.
+## * Plot is missing `Variable`
+## * Layer 1 is missing `Variable`
 {% endhighlight %}
 
 ![center](../figure/04/GoodeKatherine/unnamed-chunk-11-1.png)

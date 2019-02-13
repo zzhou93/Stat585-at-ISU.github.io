@@ -137,10 +137,16 @@ ggplot(Dep_Event,aes(x=month,y=Dep_delay_event_number)) + geom_line()+stat_smoot
 
 
 {% highlight text %}
-## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
+## Don't know how to automatically pick scale for object of type function. Defaulting to continuous.
 {% endhighlight %}
 
-![center](../figure/04/ZhangXin/unnamed-chunk-7-1.png)
+
+
+{% highlight text %}
+## Error: Column `x` must be a 1d atomic vector or a list
+{% endhighlight %}
+
+
 
 {% highlight r %}
 ggplot(Arr_Event,aes(x=month,y=Arr_delay_event_number)) + geom_line()+stat_smooth()+ xlab('Month') + ylab('Arrival Delay Event Number')
@@ -149,8 +155,14 @@ ggplot(Arr_Event,aes(x=month,y=Arr_delay_event_number)) + geom_line()+stat_smoot
 
 
 {% highlight text %}
-## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
+## Don't know how to automatically pick scale for object of type function. Defaulting to continuous.
 {% endhighlight %}
 
-![center](../figure/04/ZhangXin/unnamed-chunk-7-2.png)
+
+
+{% highlight text %}
+## Error: Column `x` must be a 1d atomic vector or a list
+{% endhighlight %}
+
+![center](../figure/04/ZhangXin/unnamed-chunk-7-1.png)
 From the plots, we can see for both delay events, Jan. and July are two peak months, while in Sept. and Oct. there are fewer delay events
