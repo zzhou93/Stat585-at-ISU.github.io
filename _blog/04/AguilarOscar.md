@@ -22,24 +22,19 @@ stocks.data <- read.csv('https://raw.githubusercontent.com/oscarm524/DataSets/ma
 
 ## Here we conver factor into date
 stocks.data <- stocks.data %>% mutate(Date = as.Date(as.character(Date)))
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in stocks.data %>% mutate(Date = as.Date(as.character(Date))): could not find function "%>%"
-{% endhighlight %}
-
-
-
-{% highlight r %}
 stocks.data %>% head
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## Error in stocks.data %>% head: could not find function "%>%"
+##         Date AAPL.Adjusted MSFT.Adjusted
+## 1 2018-01-02      168.9873      84.48741
+## 2 2018-01-03      168.9579      84.88061
+## 3 2018-01-04      169.7427      85.62768
+## 4 2018-01-05      171.6753      86.68930
+## 5 2018-01-08      171.0376      86.77776
+## 6 2018-01-09      171.0180      86.71879
 {% endhighlight %}
 
 We first plot the adjusted close price over time for both stocks. 
@@ -52,11 +47,7 @@ ggplot(stocks.data, aes(Date)) +
   labs(color = 'Stocks') + labs(y = 'Stock Price')
 {% endhighlight %}
 
-
-
-{% highlight text %}
-## Error in ggplot(stocks.data, aes(Date)): could not find function "ggplot"
-{% endhighlight %}
+![center](../figure/04/AguilarOscar/unnamed-chunk-2-1.png)
 
 From the above plot, it seems that there is a positive correlation between the two stocks. Let's find the correlation between them. 
 
@@ -76,17 +67,7 @@ From the above, it is clear that there is a moderate strong correlation between 
 
 {% highlight r %}
 stocks.data <- stocks.data %>% mutate(Day = wday(Date, label = T, abbr = T))
-{% endhighlight %}
 
-
-
-{% highlight text %}
-## Error in stocks.data %>% mutate(Day = wday(Date, label = T, abbr = T)): could not find function "%>%"
-{% endhighlight %}
-
-
-
-{% highlight r %}
 ## Apple data
 stocks.data %>% select(AAPL.Adjusted, Day) %>% group_by(Day) %>% summarise(Avg.Price = mean(AAPL.Adjusted))
 {% endhighlight %}
@@ -94,7 +75,14 @@ stocks.data %>% select(AAPL.Adjusted, Day) %>% group_by(Day) %>% summarise(Avg.P
 
 
 {% highlight text %}
-## Error in stocks.data %>% select(AAPL.Adjusted, Day) %>% group_by(Day) %>% : could not find function "%>%"
+## # A tibble: 5 x 2
+##   Day   Avg.Price
+##   <ord>     <dbl>
+## 1 Mon        187.
+## 2 Tue        187.
+## 3 Wed        187.
+## 4 Thu        187.
+## 5 Fri        187.
 {% endhighlight %}
 
 
@@ -107,7 +95,14 @@ stocks.data %>% select(MSFT.Adjusted, Day) %>% group_by(Day) %>% summarise(Avg.P
 
 
 {% highlight text %}
-## Error in stocks.data %>% select(MSFT.Adjusted, Day) %>% group_by(Day) %>% : could not find function "%>%"
+## # A tibble: 5 x 2
+##   Day   Avg.Price
+##   <ord>     <dbl>
+## 1 Mon       100. 
+## 2 Tue       100. 
+## 3 Wed       100.0
+## 4 Thu       100. 
+## 5 Fri       100.
 {% endhighlight %}
 
 From the above output, there is an obvious relationship betweent the average adjusted closing price and the day of the week. 

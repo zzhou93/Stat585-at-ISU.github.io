@@ -18,10 +18,11 @@ Write a blog post addressing the questions:
 
 - Describe what intervals, durations, periods, and instants are, and give one example for each that shows why we need these distinctions.
 
-Interval means from starting to ending point. e.g. From 1 am to 2 am. 
-Duration means an exact number of seconds. e.g. The duration from 1 am to 2 am is 3600s.
-Period means units for human read. e.g. The period from 1 am to 2 am is 1 hour.
-Instant means the exact time. e.g. 2019-02-08 20:00:00.
+Interval means from starting to ending point. e.g. From 1 am to 2 am. It should include two points.
+Duration means an exact number of seconds. e.g. The duration from 1 am to 2 am is 3600s. Duration only use unit as second.
+Period means units for human read. e.g. The period from 1 am to 2 am is 1 hour. The unit for period could be hour, week, month. It doesn't like durattion, which only use second.
+Instant means the exact time. e.g. 2019-02-08 20:00:00. It's only one point.
+It is important to distinguish between these things because when we use different functions in the lubridate package with same input, might got different result.
 
 
 - The `ggplot2` package works seamlessy with lubridate. Find a data set with dates and/or times, use lubridate to work with the dates/times, then plot a time-related aspect of the data and describe it.  
