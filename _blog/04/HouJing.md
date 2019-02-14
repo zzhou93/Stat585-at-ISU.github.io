@@ -24,7 +24,7 @@ now()
 
 
 {% highlight text %}
-## [1] "2019-02-13 14:14:55 CST"
+## [1] "2019-02-13 18:57:30 CST"
 {% endhighlight %}
 
 Intervals, durations, periods are all ways of recording timespans.    

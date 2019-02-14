@@ -53,6 +53,14 @@ dweeks(1) - dseconds(10000)
 
 
 {% highlight text %}
+## Note: method with signature 'Duration#ANY' chosen for function '-',
+##  target signature 'Duration#Duration'.
+##  "ANY#Duration" would also be valid
+{% endhighlight %}
+
+
+
+{% highlight text %}
 ## [1] "594800s (~6.88 days)"
 {% endhighlight %}
 

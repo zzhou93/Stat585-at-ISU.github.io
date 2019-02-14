@@ -53,7 +53,7 @@ as.duration(end - start)
 
 
 {% highlight text %}
-## [1] "0.0116469860076904s"
+## [1] "0.0107369422912598s"
 {% endhighlight %}
 
 #### Periods
@@ -69,7 +69,7 @@ ymd_hms("2019-09-08 00:00:00") - now()
 
 
 {% highlight text %}
-## Time difference of 206.1564 days
+## Time difference of 205.9601 days
 {% endhighlight %}
 
 ## Question 2
