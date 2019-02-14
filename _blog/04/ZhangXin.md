@@ -125,6 +125,12 @@ dat<-read.csv(file='https://raw.githubusercontent.com/Rdatatable/data.table/mast
 dat %>% mutate(date = ymd(sprintf('%04d%02d%02d', year, month, day))) %>%  select(-year,-month,-day) %>% mutate(month = month(date)) -> dat
 {% endhighlight %}
 
+
+
+{% highlight text %}
+## Error in select(., -year, -month, -day): unused arguments (-year, -month, -day)
+{% endhighlight %}
+
 We set the delay time above 5 as an event. Then we compare the departure delay event and arrival delay event among the monthes.
 
 {% highlight r %}

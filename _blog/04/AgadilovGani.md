@@ -37,7 +37,7 @@ now()
 
 
 {% highlight text %}
-## [1] "2019-02-13 18:56:49 CST"
+## [1] "2019-02-13 23:18:57 CST"
 {% endhighlight %}
 
 
@@ -49,7 +49,7 @@ date()
 
 
 {% highlight text %}
-## [1] "Wed Feb 13 18:56:49 2019"
+## [1] "Wed Feb 13 23:18:57 2019"
 {% endhighlight %}
 
 Interval. An interval is a span of time that occurs between two specific instants. For example, how many weeks from February 11th in 2019 to February 11th in 2020. Intervals have a starting and ending point.

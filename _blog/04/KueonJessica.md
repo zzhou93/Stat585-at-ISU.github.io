@@ -1,6 +1,6 @@
 ---
 title: "Interesting times..."
-author: "Jessica Kueon
+author: "Jessica Kueon"
 topic: "04"
 layout: post
 root: ../../../
@@ -42,20 +42,7 @@ flights %>%
 
 
 {% highlight text %}
-## # A tibble: 336,776 x 6
-##     year month   day  hour minute arr_time
-##    <int> <int> <int> <dbl>  <dbl>    <int>
-##  1  2013     1     1     5     15      830
-##  2  2013     1     1     5     29      850
-##  3  2013     1     1     5     40      923
-##  4  2013     1     1     5     45     1004
-##  5  2013     1     1     6      0      812
-##  6  2013     1     1     5     58      740
-##  7  2013     1     1     6      0      913
-##  8  2013     1     1     6      0      709
-##  9  2013     1     1     6      0      838
-## 10  2013     1     1     6      0      753
-## # ... with 336,766 more rows
+## Error in select(., year, month, day, hour, minute, arr_time): unused arguments (year, month, day, hour, minute, arr_time)
 {% endhighlight %}
 
 
@@ -70,20 +57,7 @@ flights %>%
 
 
 {% highlight text %}
-## # A tibble: 336,776 x 6
-##     year month   day  hour minute departure          
-##    <int> <int> <int> <dbl>  <dbl> <dttm>             
-##  1  2013     1     1     5     15 2013-01-01 05:15:00
-##  2  2013     1     1     5     29 2013-01-01 05:29:00
-##  3  2013     1     1     5     40 2013-01-01 05:40:00
-##  4  2013     1     1     5     45 2013-01-01 05:45:00
-##  5  2013     1     1     6      0 2013-01-01 06:00:00
-##  6  2013     1     1     5     58 2013-01-01 05:58:00
-##  7  2013     1     1     6      0 2013-01-01 06:00:00
-##  8  2013     1     1     6      0 2013-01-01 06:00:00
-##  9  2013     1     1     6      0 2013-01-01 06:00:00
-## 10  2013     1     1     6      0 2013-01-01 06:00:00
-## # ... with 336,766 more rows
+## Error in select(., year, month, day, hour, minute): unused arguments (year, month, day, hour, minute)
 {% endhighlight %}
 
 
@@ -107,21 +81,7 @@ flights_dt %>%
 
 
 {% highlight text %}
-## # A tibble: 328,063 x 9
-##    origin dest  dep_delay arr_delay dep_time            sched_dep_time     
-##    <chr>  <chr>     <dbl>     <dbl> <dttm>              <dttm>             
-##  1 EWR    IAH           2        11 2013-01-01 05:17:00 2013-01-01 05:15:00
-##  2 LGA    IAH           4        20 2013-01-01 05:33:00 2013-01-01 05:29:00
-##  3 JFK    MIA           2        33 2013-01-01 05:42:00 2013-01-01 05:40:00
-##  4 JFK    BQN          -1       -18 2013-01-01 05:44:00 2013-01-01 05:45:00
-##  5 LGA    ATL          -6       -25 2013-01-01 05:54:00 2013-01-01 06:00:00
-##  6 EWR    ORD          -4        12 2013-01-01 05:54:00 2013-01-01 05:58:00
-##  7 EWR    FLL          -5        19 2013-01-01 05:55:00 2013-01-01 06:00:00
-##  8 LGA    IAD          -3       -14 2013-01-01 05:57:00 2013-01-01 06:00:00
-##  9 JFK    MCO          -3        -8 2013-01-01 05:57:00 2013-01-01 06:00:00
-## 10 LGA    ORD          -2         8 2013-01-01 05:58:00 2013-01-01 06:00:00
-## # ... with 328,053 more rows, and 3 more variables: arr_time <dttm>,
-## #   sched_arr_time <dttm>, air_time <dbl>
+## Error in select(., origin, dest, ends_with("delay"), ends_with("time")): unused arguments (origin, dest, ends_with("delay"), ends_with("time"))
 {% endhighlight %}
 
 

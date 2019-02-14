@@ -141,8 +141,17 @@ mydata <- soil %>%
   mutate(HOUR = as.factor(as.character(hour(datetime)))) %>%
   mutate(DAY = as.factor(as.character(day(datetime)))) %>% 
   select(HOUR, DAY, soil_temperature, soil_moisture)
+{% endhighlight %}
 
 
+
+{% highlight text %}
+## Error in select(., HOUR, DAY, soil_temperature, soil_moisture): unused arguments (HOUR, DAY, soil_temperature, soil_moisture)
+{% endhighlight %}
+
+
+
+{% highlight r %}
 mydata %>% ggplot(aes(y=soil_temperature, x = HOUR)) +
   geom_boxplot()+ facet_grid(cols = vars(DAY))  +
   ggtitle("Boxplot of soil_temperature in each hour for 5 days") +

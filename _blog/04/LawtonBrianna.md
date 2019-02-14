@@ -27,7 +27,7 @@ date
 
 
 {% highlight text %}
-## [1] "2019-02-13 19:00:44 CST"
+## [1] "2019-02-13 23:21:57 CST"
 {% endhighlight %}
 * The following classes represent ways of analyzing different timespans.
 

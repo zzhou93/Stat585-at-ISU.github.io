@@ -206,6 +206,17 @@ library(tidyverse)
 df <- economics %>%
   select(date, psavert, uempmed) %>%
   gather(key = "variable", value = "value", -date)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in select(., date, psavert, uempmed): unused arguments (date, psavert, uempmed)
+{% endhighlight %}
+
+
+
+{% highlight r %}
 head(df, 3)
 {% endhighlight %}
 

@@ -25,7 +25,7 @@ tim
 
 
 {% highlight text %}
-## [1] "2019-02-13 19:03:03 CST"
+## [1] "2019-02-13 23:23:38 CST"
 {% endhighlight %}
 
 
@@ -52,7 +52,7 @@ sp
 
 
 {% highlight text %}
-## Time difference of 10.94899 hours
+## Time difference of 6.60607 hours
 {% endhighlight %}
 Duration is fixed, it isn't change. We have exact length for each seconds, since duration is measured in seconds. 
 
@@ -98,7 +98,7 @@ now() + ddays(108)
 
 
 {% highlight text %}
-## [1] "2019-06-01 20:03:03 CDT"
+## [1] "2019-06-02 00:23:38 CDT"
 {% endhighlight %}
 
 
@@ -203,7 +203,7 @@ data1 <- fortify(deaths)
 
 
 {% highlight text %}
-## Error in fortify(deaths): object 'deaths' not found
+## Error: `data` must be a data frame, or other object coercible by `fortify()`, not an S3 object with class ts
 {% endhighlight %}
 
 

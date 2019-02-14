@@ -1,5 +1,5 @@
 ---
-title: "Ethics and Reproducibility"
+title: "Interesting times..."
 author: "Earl Hur"
 root: ../../../
 layout: post
@@ -34,23 +34,29 @@ p_terror <- terror %>%
   group_by(month=lubridate::floor_date(Date, "month"), attacktype1_txt) %>%
   summarise(count=length(attacktype1_txt)) %>%
   ggplot(aes(month, count, fill=attacktype1_txt)) +
-  geom_bar(stat = "identity",
-           aes(text=(paste("Attack Type: ", attacktype1_txt,
-                           "<br>Count: ", count,
-                           "<br>Year: ", year(month),
-                           "<br>Month: ", month(month, label = TRUE))))) +
+  geom_bar(stat = "identity"
+#           , aes(text=(paste("Attack Type: ", attacktype1_txt,
+#                           "<br>Count: ", count,
+#                           "<br>Year: ", year(month),
+#                           "<br>Month: ", month(month, label = TRUE))))
+) +
   labs(x = "Months from 2010 to 2014", y = "Number of Attacks", 
        title = "Number of Attacks from 2010 to 2014") +
   guides(fill=guide_legend(title="Attack Type")) + 
   theme_light() +
   theme()
-  
-ggplotly(p_terror, tooltip = "text")
+p_terror
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## Error in paste("Attack Type: ", attacktype1_txt, "<br>Count: ", count, : object 'attacktype1_txt' not found
+## Error in FUN(X[[i]], ...): object 'attacktype1_txt' not found
+{% endhighlight %}
+
+![center](../figure/04/EarlHur/unnamed-chunk-2-1.png)
+
+{% highlight r %}
+#ggplotly(p_terror, tooltip = "text")
 {% endhighlight %}
 

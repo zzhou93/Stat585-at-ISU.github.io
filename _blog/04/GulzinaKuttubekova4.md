@@ -19,7 +19,7 @@ now() #returns time in hours, minutes and seconds as well as the today's date
 
 
 {% highlight text %}
-## [1] "2019-02-13 18:57:27 CST"
+## [1] "2019-02-13 23:19:20 CST"
 {% endhighlight %}
 
 - Duration: is the amount of time elapsed between two events. Events might be measured in different ways: centuries, years, months, weeks, hours, minutes, second or even milliseconds. Depending on the case, one may choose a specific measurement. However, it may cause difficulties (eg. in DS research). To avoid this, we can utilize lubridate’s approach: duration measurement in seconds.

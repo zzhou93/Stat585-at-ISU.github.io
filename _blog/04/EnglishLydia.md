@@ -33,7 +33,17 @@ AQ2 <- airquality %>%
   mutate(Year = 1973) %>%
   mutate(sample_date = mdy(paste(Month, Day, Year, sep = "/"))) %>%
   select(-c(Month, Day, Year))
+{% endhighlight %}
 
+
+
+{% highlight text %}
+## Error in select(., -c(Month, Day, Year)): unused argument (-c(Month, Day, Year))
+{% endhighlight %}
+
+
+
+{% highlight r %}
 p1<- AQ2 %>%
   ggplot(aes(x = sample_date)) +
   geom_line(aes(y = Ozone), colour = "red", size = 1)+
@@ -84,10 +94,6 @@ kable(AQ2 %>%
 
 
 
-|sample_month |    Ozone|  Solar.R|      Wind|     Temp|
-|:------------|--------:|--------:|---------:|--------:|
-|May          | 23.61538| 181.2963| 11.622581| 65.54839|
-|Jun          | 29.44444| 190.1667| 10.266667| 79.10000|
-|Jul          | 59.11538| 216.4839|  8.941935| 83.90323|
-|Aug          | 59.96154| 171.8571|  8.793548| 83.96774|
-|Sep          | 31.44828| 167.4333| 10.180000| 76.90000|
+{% highlight text %}
+## Error in select(., -sample_date): unused argument (-sample_date)
+{% endhighlight %}

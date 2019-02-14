@@ -42,6 +42,17 @@ flights_dt <-flights %>%
     arr_time=make_datetime_100(year,month,day,arr_time)
   ) %>% 
   select (origin,dest,ends_with("delay"),ends_with("time"))
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in select(., origin, dest, ends_with("delay"), ends_with("time")): unused arguments (origin, dest, ends_with("delay"), ends_with("time"))
+{% endhighlight %}
+
+
+
+{% highlight r %}
 ##check arrive time across all time
 flights_dt %>% 
   ggplot(aes(arr_time))+

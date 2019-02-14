@@ -53,7 +53,7 @@ as.duration(end - start)
 
 
 {% highlight text %}
-## [1] "0.0107369422912598s"
+## [1] "0.0280849933624268s"
 {% endhighlight %}
 
 #### Periods
@@ -69,7 +69,7 @@ ymd_hms("2019-09-08 00:00:00") - now()
 
 
 {% highlight text %}
-## Time difference of 205.9601 days
+## Time difference of 205.7782 days
 {% endhighlight %}
 
 ## Question 2
@@ -98,6 +98,12 @@ iowa_tornados <- read_csv("https://raw.githubusercontent.com/goodekat/datafun/ma
   select(-Damage)
 {% endhighlight %}
 
+
+
+{% highlight text %}
+## Error in select(., -Damage): unused argument (-Damage)
+{% endhighlight %}
+
 <br>
 
 
@@ -120,6 +126,12 @@ iowa_tornados <- iowa_tornados %>%
          Hour = hour(Time)) %>%
   select(Date, Year:Day, Time, Hour, Fatalities, 
          Injuries, Fujita, Width, Length)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in select(., Date, Year:Day, Time, Hour, Fatalities, Injuries, Fujita, : unused arguments (Date, Year:Day, Time, Hour, Fatalities, Injuries, Fujita, Width, Length)
 {% endhighlight %}
 
 <br>
@@ -189,7 +201,11 @@ iowa_tornados %>%
        title = "Fujitas, Lengths, and Widths of Tornados by Hour of the Day")
 {% endhighlight %}
 
-![center](../figure/04/GoodeKatherine/unnamed-chunk-10-1.png)
+
+
+{% highlight text %}
+## Error in select(., Date, Year, Time, Hour, Fujita:Length): unused arguments (Date, Year, Time, Hour, Fujita:Length)
+{% endhighlight %}
 
 <br>
 
@@ -217,10 +233,6 @@ iowa_tornados %>%
 
 
 {% highlight text %}
-## Error: At least one layer must contain all faceting variables: `Variable`.
-## * Plot is missing `Variable`
-## * Layer 1 is missing `Variable`
+## Error in select(., Date, Year, Time, Fatalities, Injuries): unused arguments (Date, Year, Time, Fatalities, Injuries)
 {% endhighlight %}
-
-![center](../figure/04/GoodeKatherine/unnamed-chunk-11-1.png)
 

@@ -1,7 +1,9 @@
 ---
 title: "Interesting times..."
 author: "Jing Hou"
-output: pdf_document
+output:
+  html_document:
+    df_print: paged
 root: ../../../
 layout: post
 topic: '04'
@@ -24,7 +26,7 @@ now()
 
 
 {% highlight text %}
-## [1] "2019-02-13 18:57:30 CST"
+## [1] "2019-02-13 23:19:28 CST"
 {% endhighlight %}
 
 Intervals, durations, periods are all ways of recording timespans.    
@@ -40,7 +42,7 @@ dyears(1)
 {% highlight text %}
 ## [1] "31536000s (~52.14 weeks)"
 {% endhighlight %}
-**Periods** represent human units like weeks and months. Different from durations, periods don't have a fix length in seconds. They work in a more intuitive way. In the following example, using years(1) we can get "2017-01-01", which is what we expect. But using durations dyears(1) we will get "2016-12-31". Because 2016 is a leap year, adding 31536000s (365d) will get 2016-12-31.
+**Periods** represent human units like weeks and months. Different from durations, periods don't have a fixed length in seconds. They work in a more intuitive way. In the following example, using years(1) we can get "2017-01-01", which is what we expect. But using durations dyears(1) we will get "2016-12-31". Because 2016 is a leap year, adding 31536000s (365d) will get 2016-12-31.
 
 {% highlight r %}
 ymd("2016-01-01") + dyears(1)
@@ -87,6 +89,7 @@ budget %>% ggplot(aes(x=wday(`Release Date`, label=TRUE))) + geom_bar()
 {% endhighlight %}
 
 ![center](../figure/04/HouJing/unnamed-chunk-6-2.png)
+
 December had the largest number of movies released during a year. The majority of movies were released on Friday in a week.
 
 
@@ -101,5 +104,6 @@ budget %>%
 {% endhighlight %}
 
 ![center](../figure/04/HouJing/unnamed-chunk-7-1.png)
+
 In generally, December had the largest number of movies released during 2000-2017, especially in 2015. Surprisedly, the number of movies was decreased in 2016 and 2017.
 

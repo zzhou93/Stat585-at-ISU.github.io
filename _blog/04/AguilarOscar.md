@@ -80,8 +80,7 @@ stocks.data %>% select(AAPL.Adjusted, Day) %>% group_by(Day) %>% summarise(Avg.P
 
 
 {% highlight text %}
-##   Avg.Price
-## 1   187.106
+## Error in select(., AAPL.Adjusted, Day): unused arguments (AAPL.Adjusted, Day)
 {% endhighlight %}
 
 
@@ -94,8 +93,7 @@ stocks.data %>% select(MSFT.Adjusted, Day) %>% group_by(Day) %>% summarise(Avg.P
 
 
 {% highlight text %}
-##   Avg.Price
-## 1  100.2247
+## Error in select(., MSFT.Adjusted, Day): unused arguments (MSFT.Adjusted, Day)
 {% endhighlight %}
 
 From the above output, there is an obvious relationship betweent the average adjusted closing price and the day of the week. 
