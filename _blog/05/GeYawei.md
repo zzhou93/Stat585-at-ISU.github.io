@@ -9,7 +9,7 @@ root: ../../../
 
 ###1.Answer each of the following questions with at least 2-3 sentences.
 
-**1. Summarize Roger Peng¡¯s outline for reproducibility in Biostatistics.**
+**1. Summarize Roger Peng??s outline for reproducibility in Biostatistics.**
 
 Peng stated the policy the *Biostatistics* has adopted to improve the reproducibility of papers in the journal. He has listed three dimensions of reproducibility the journal using to rate the degree of reproducibility of a paper and the corresponding requirements.
 
@@ -21,7 +21,7 @@ Peng stated the policy the *Biostatistics* has adopted to improve the reproducib
 
 Other supplementary and necessary files are also required if they are necessary to reproduce the result and understand it.
 
-**2. What are Keiding¡¯s main criticisms of the proposal?.**
+**2. What are Keiding's main criticisms of the proposal?.**
 
 The main criticism is that the proposal will overemphasis the data itself and the statistical computation processes and ignore the important substantive context of the study. And he also critize that researchers should do more work on problem-oriented study instead of generalizing the methods to trivial data sets. He also emphasises the importance of cooperation of statistian and substantive scientists and critize simplifying the reproduciable issue to data and statistical coding(numbers and code).
 
