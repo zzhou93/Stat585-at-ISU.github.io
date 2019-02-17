@@ -97,7 +97,7 @@ today() %--% (today() + years(5))
 
 
 {% highlight text %}
-## [1] 2019-02-13 UTC--2024-02-13 UTC
+## [1] 2019-02-15 UTC--2024-02-15 UTC
 {% endhighlight %}
 
 

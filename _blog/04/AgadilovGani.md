@@ -25,7 +25,7 @@ today()
 
 
 {% highlight text %}
-## [1] "2019-02-13"
+## [1] "2019-02-15"
 {% endhighlight %}
 
 
@@ -37,7 +37,7 @@ now()
 
 
 {% highlight text %}
-## [1] "2019-02-13 23:18:57 CST"
+## [1] "2019-02-15 12:12:31 CST"
 {% endhighlight %}
 
 
@@ -49,7 +49,7 @@ date()
 
 
 {% highlight text %}
-## [1] "Wed Feb 13 23:18:57 2019"
+## [1] "Fri Feb 15 12:12:31 2019"
 {% endhighlight %}
 
 Interval. An interval is a span of time that occurs between two specific instants. For example, how many weeks from February 11th in 2019 to February 11th in 2020. Intervals have a starting and ending point.
@@ -88,7 +88,7 @@ age
 
 
 {% highlight text %}
-## Time difference of 11181 days
+## Time difference of 11183 days
 {% endhighlight %}
 
 
@@ -100,7 +100,7 @@ as.duration(age)
 
 
 {% highlight text %}
-## [1] "966038400s (~30.61 years)"
+## [1] "966211200s (~30.62 years)"
 {% endhighlight %}
 
 Period. Periods record a time span in units larger than seconds, such as years, months, weeks, days, hours, and minutes. For example, period of 5 weeks is 35 days 0 hours 0 minutes 0 seconds.

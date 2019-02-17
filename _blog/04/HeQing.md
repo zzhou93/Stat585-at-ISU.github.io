@@ -132,7 +132,7 @@ today()
 
 
 {% highlight text %}
-## [1] "2019-02-13"
+## [1] "2019-02-15"
 {% endhighlight %}
 
 
@@ -144,7 +144,7 @@ now()
 
 
 {% highlight text %}
-## [1] "2019-02-13 23:19:27 CST"
+## [1] "2019-02-15 12:13:06 CST"
 {% endhighlight %}
 
 - The `ggplot2` package works seamlessy with lubridate. Find a data set with dates and/or times, use lubridate to work with the dates/times, then plot a time-related aspect of the data and describe it.  

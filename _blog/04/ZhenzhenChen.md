@@ -25,7 +25,7 @@ tim
 
 
 {% highlight text %}
-## [1] "2019-02-13 23:23:38 CST"
+## [1] "2019-02-15 12:14:05 CST"
 {% endhighlight %}
 
 
@@ -52,7 +52,7 @@ sp
 
 
 {% highlight text %}
-## Time difference of 6.60607 hours
+## Time difference of -1.25979 days
 {% endhighlight %}
 Duration is fixed, it isn't change. We have exact length for each seconds, since duration is measured in seconds. 
 
@@ -98,7 +98,7 @@ now() + ddays(108)
 
 
 {% highlight text %}
-## [1] "2019-06-02 00:23:38 CDT"
+## [1] "2019-06-03 13:14:05 CDT"
 {% endhighlight %}
 
 
