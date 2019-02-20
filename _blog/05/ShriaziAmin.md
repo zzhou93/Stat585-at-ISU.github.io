@@ -6,10 +6,10 @@ layout: post
 root: ../../../
 ---
 #### Part I
-  1. **Summarize Roger Peng’s outline for reproducibility in Biostatistics.**
+  1. **Summarize Roger Peng's outline for reproducibility in Biostatistics.**
   Peng has an idea to define some standards for reproducibility which involves three different dimensions. These are Data, Code and Reproducible from which any results derived in the published article can be reproduced. 
   
-  2. ** What are Keiding’s main criticisms of the proposal?.**
+  2. ** What are Keiding's main criticisms of the proposal?.**
   Keiding agrees with the idea of reproducibility, but has also some comments abou it. He believes we should avoid encouraging the already far too widespread occurence of not well-known reanalysis of the data sets where not many statisticians know much about. He explains that the two major research types in biostatistics have different approaches and it might be bothering to the editors of journals.
     
   3.**Which point in the commentaries speaks to you the most? Why?**
