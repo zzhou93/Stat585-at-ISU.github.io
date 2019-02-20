@@ -1,6 +1,6 @@
 ---
 title: "More on Reproducibility..."
-author: "Firstname Lastname"
+author: "Jessica Kueon"
 topic: "05"
 layout: post
 root: ../../../

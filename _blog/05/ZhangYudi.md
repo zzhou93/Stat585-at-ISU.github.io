@@ -1,6 +1,6 @@
 ---
 title: "More on Reproducibility..."
-author: "Firstname Lastname"
+author: "Yudi Zhang"
 topic: "05"
 layout: post
 root: ../../../

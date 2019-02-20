@@ -34,8 +34,3 @@ topic: '05'
 2. **Describe your experience with a data intensive (collaborative) project. What are the most prominent issues with ensuring reproducibility of research results (focus on data related aspects)? What would you do differently if you could go back in time?**
 
 Several years ago, I was assigned to do part of the data analysis for the field investigation which I did not participate in. I spent almost one month to do some analysis according to the given description. Then I encountered some problems and couldn't go on. After I contacted the students who did the experimental analysis, one of them found a mistake they made. So I had to start over to correct it. If I could go back in time, I would communicate with them before I began my work.
-
-
-
-
-
