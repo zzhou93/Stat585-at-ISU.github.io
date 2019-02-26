@@ -1,8 +1,8 @@
 ---
 title: "Blog6"
 author: "Yawei Ge"
-date: ""
-output: html_document
+layout: post
+root: ../../../
 ---
 
 <http://yaweige.github.io>.
