@@ -1,12 +1,13 @@
 ---
 title: "My_website"
 author: "Gani Agadilov"
-date: "2/26/2019"
-output: pdf_document
+topic: "06"
+layout: post
+root: ../../../
 ---
 
 
-This is a link to my website : https://ganiagadil.github.io
+This is a link to my website : [https://ganiagadil.github.io](https://ganiagadil.github.io)
 
 
 The main problem for this assignment was preparing all components to run rmarkdown::render_site(). Running the code several times did not provide any results. I noticed there were only mistakes related to the formats of the files. I used the correct path and right formats of the files and problem solved.
