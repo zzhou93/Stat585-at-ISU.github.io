@@ -1,6 +1,7 @@
 ---
 title: "Blog6"
 author: "Yawei Ge"
+topic: "06"
 layout: post
 root: ../../../
 ---
