@@ -26,17 +26,17 @@ the licence is as it is, so nobody is responsible i guess but generally the auth
 **GPL-3**
 1- Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 2-yes
-3-
+3-No warranty so nobody is responsible 
 
 **LGPL-3**
 1-Derivatives works (including modifications or anything statically linked to the library) can only be redistributed under LGPL but applications that use the library don't have to be.
 2-yes it has commercial use
-3-
+3-author is not liable if software does not work properly
 
 **CC-0**
 1-yes
 2-yes
-3-the "Affirmer"
+3-no one i guess 
 
 3. **Assume that you are in the process of making a package for your own graduate work. Describe considerations that come into play in deciding on a license. In case you are not quite at that stage in your graduate studies yet, come up with a likely scenario. Describe it and discuss.**
 I would probabily want for people to change it but not without my approval and check! for example im making a package for statistical analysis of time series then people in large scale data use the prediction algorithms and trust the results if anybody could change the source the validity of the result would not be certain
