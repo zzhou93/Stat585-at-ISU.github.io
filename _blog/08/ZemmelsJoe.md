@@ -48,57 +48,16 @@ dev.off()
 
 {% highlight r %}
 #Save png and pdf using magick
-image_write(fig,"../../blog8/mtcars.png",format = "png")
-{% endhighlight %}
+image_write(fig,"mtcars.png",format = "png")
+image_write(fig,"mtcars.pdf",format = "pdf")
 
-
-
-{% highlight text %}
-## Warning in file(con, "wb"): cannot open file '../../blog8/mtcars.png': No
-## such file or directory
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in file(con, "wb"): cannot open the connection
-{% endhighlight %}
-
-
-
-{% highlight r %}
-image_write(fig,"../../blog8/mtcars.pdf",format = "pdf")
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Warning in file(con, "wb"): cannot open file '../../blog8/mtcars.pdf': No
-## such file or directory
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in file(con, "wb"): cannot open the connection
-{% endhighlight %}
-
-
-
-{% highlight r %}
 #Save svg using ggsave
 plt <- mtcars %>%
   ggplot(aes(x=hp,y=mpg,colour=factor(cyl))) + 
   geom_point() +
   geom_smooth(method="lm",se = FALSE)
 
-ggsave("../../blog8/mtcars.svg",plot=plt,width=10,height=8)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in svglite_(file, bg, width, height, pointsize, standalone, aliases): cannot open stream ../../blog8/mtcars.svg
+ggsave("mtcars.svg",plot=plt,width=10,height=8)
 {% endhighlight %}
 
 (I'm not sure where you want the images saved, but I imagine you don't want them in the blog-2019 directory). I see that png and pdf images are quite portable and easy to write. If I were interested in sending an image to a colleague, then I would likely use those. However, an svg file would be useful to store locally so that I would have at least one high-quality copy of the image.
