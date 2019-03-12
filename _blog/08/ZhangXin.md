@@ -54,5 +54,71 @@ The rule to choose PNG or SVG or PDF:
 
 
 
+{% highlight r %}
+data(mtcars)
+corr <- round(cor(mtcars), 1)
+c <- ggcorrplot(corr, method = "circle")
+ggsave(file='c.svg')
+{% endhighlight %}
 
 
+
+{% highlight text %}
+## Saving 7 x 7 in image
+{% endhighlight %}
+
+
+
+{% highlight r %}
+ggsave(file='c.pdf')
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Saving 7 x 7 in image
+{% endhighlight %}
+
+
+
+{% highlight r %}
+ggsave(file='c.png')
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Saving 7 x 7 in image
+{% endhighlight %}
+
+
+
+{% highlight r %}
+Ipng <- image_read("c.png")
+Ipdf <- image_read("c.pdf")
+Isvg <- image_read("c.svg")
+compare <- rbind(image_info(Ipng), image_info(Ipdf), image_info(Isvg))
+compare %>% knitr::kable(caption = "Comparison of SVG, PDF, and PNG")
+{% endhighlight %}
+
+
+
+|format | width| height|colorspace |matte | filesize|density |
+|:------|-----:|------:|:----------|:-----|--------:|:-------|
+|PNG    |  2099|   2099|sRGB       |TRUE  |   514743|72x72   |
+|PDF    |   503|    503|sRGB       |TRUE  |    81110|72x72   |
+|SVG    |   504|    504|sRGB       |TRUE  |   427711|96x96   |
+
+Compare the three formats. PNG is the largest and SVG is the smallest. The density of SVG is the largest.
+
+2. **Use `magick` functionality to create an image to be used for a hex sticker.**  package `hexSticker` can help you to get started on dimensions of the sticker. **Include all code necessary to produce your sticker.** In case you are using local images, post those in a folder on **your** website and use the URL to link to them.
+
+
+{% highlight r %}
+sticker_c <- sticker(c, package = "AdsFunnel", p_size=18, p_color = "#f39c12",
+             s_x=1, s_y=1, s_width=1.5, s_height = 1.5, 
+             h_fill="#FFFFFF", h_color="#f39c12")
+sticker_c 
+{% endhighlight %}
+
+![center](../figure/08/ZhangXin/unnamed-chunk-3-1.png)

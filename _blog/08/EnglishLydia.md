@@ -55,8 +55,18 @@ ggsave("tx.svg")
 {% endhighlight %}
 Here are images of my plots - I could not get the pdf to show up in the html but we can compare the png and the svg. I'm assuming these files are saving to the working directory of the person knitting the document. 
 
-![png file](tx.png)
-![svg filetype ](tx.svg)
+
+{% highlight r %}
+knitr::include_graphics("tx.png")
+{% endhighlight %}
+
+![center](.tx.png)
+
+{% highlight r %}
+knitr::include_graphics("tx.svg")
+{% endhighlight %}
+
+![center](.tx.svg)
 
 Right now I can't tell the difference between these two. 
 
@@ -78,11 +88,13 @@ print(butterfly)
 ## 1 PNG      225    225 sRGB       TRUE    103507 57x57
 {% endhighlight %}
 
-![center](../figure/08/EnglishLydia/unnamed-chunk-2-1.png)
+![center](../figure/08/EnglishLydia/unnamed-chunk-3-1.png)
 
 {% highlight r %}
 library(hexSticker)
-sticker(butterfly, package = "Vegan", p_color = "darkgreen", h_fill = "white", s_width = 1.2, s_height = 1, s_x = 1, s_y = 0.9, p_x = 1, p_y = 1.65, p_size = 16)
+p <- sticker(butterfly, package = "Vegan", p_color = "darkgreen", h_fill = "white", s_width = 1.2, s_height = 1, s_x = 1, s_y = 0.9, p_x = 1, p_y = 1.65, p_size = 16)
+plot(p)
 {% endhighlight %}
 
-![](Vegan.png)
+![center](../figure/08/EnglishLydia/unnamed-chunk-3-3.png)
+

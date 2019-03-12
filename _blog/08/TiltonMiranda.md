@@ -30,59 +30,7 @@ if (!require("datasauRus")) {
   devtools::install_github("lockedata/datasauRus")
   library("datasauRus")
 }
-{% endhighlight %}
 
-
-
-{% highlight text %}
-## Loading required package: datasauRus
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Warning in library(package, lib.loc = lib.loc, character.only = TRUE,
-## logical.return = TRUE, : there is no package called 'datasauRus'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Using GitHub PAT from envvar GITHUB_PAT
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Downloading GitHub repo lockedata/datasauRus@master
-## from URL https://api.github.com/repos/lockedata/datasauRus/zipball/master
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Installing datasauRus
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## '/Library/Frameworks/R.framework/Resources/bin/R' --no-site-file  \
-##   --no-environ --no-save --no-restore --quiet CMD INSTALL  \
-##   '/private/var/folders/x0/h9qjdfvm8xj4cg006s6_v4br000k9j/T/RtmpN5OgKd/devtools244f4a7674c4/lockedata-datasauRus-776332c'  \
-##   --library='/Library/Frameworks/R.framework/Versions/3.5/Resources/library'  \
-##   --install-tests
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-{% endhighlight %}
-
-
-
-{% highlight r %}
 dino <- datasaurus_dozen[datasaurus_dozen$dataset == "dino", ]
 
 d <- ggplot(dino) +
