@@ -42,21 +42,21 @@ image_info(inrainbows)
 image_ggplot(inrainbows)
 {% endhighlight %}
 
-![center](../figure/08/HarmsSteve/unnamed-chunk-10-1.png)
+![center](../figure/08/HarmsSteve/unnamed-chunk-1-1.png)
 
 {% highlight r %}
 #modulate the colors
 image_charcoal(inrainbows) %>% image_ggplot
 {% endhighlight %}
 
-![center](../figure/08/HarmsSteve/unnamed-chunk-10-2.png)
+![center](../figure/08/HarmsSteve/unnamed-chunk-1-2.png)
 
 {% highlight r %}
 #what about this one?
 image_negate(inrainbows) %>% image_rotate(90) %>% image_border("hotpink") %>% image_ggplot
 {% endhighlight %}
 
-![center](../figure/08/HarmsSteve/unnamed-chunk-10-3.png)
+![center](../figure/08/HarmsSteve/unnamed-chunk-1-3.png)
 
 {% highlight r %}
 #save the image in three different formats
@@ -108,5 +108,5 @@ cycloner <- sticker(tornado, package='CycloneR', h_fill='#CC0000', h_color = '#6
 cycloner
 {% endhighlight %}
 
-![center](../figure/08/HarmsSteve/unnamed-chunk-11-1.png)
+![center](../figure/08/HarmsSteve/unnamed-chunk-2-1.png)
 
