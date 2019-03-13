@@ -37,9 +37,9 @@ p
 ![center](../figure/08/GeYawei/unnamed-chunk-1-1.png)
 
 {% highlight r %}
-ggsave(file="p.svg", plot=p, width=10, height=10)
-ggsave(file="p.png", plot=p, width=10, height=10)
-ggsave(file="p.pdf", plot=p, width=10, height=10)
+#ggsave(file="p.svg", plot=p, width=10, height=10)
+#ggsave(file="p.png", plot=p, width=10, height=10)
+#ggsave(file="p.pdf", plot=p, width=10, height=10)
 {% endhighlight %}
 
 Acoording to my plot and its saved files, the size of the file increases in the order: PDF, SVG, PNG (5-45KB). And I can't distinguish the quality diferences. But obviously, vector image is quite stable when stretched and PDF is suitable for print and share.
@@ -58,6 +58,9 @@ picture <- picture %>%
   image_convolve('Sobel') %>%
   image_negate() 
 
-sticker(picture, s_x = 1, s_width = 0.95, s_height = 0.95, package = "elephant", p_color = "black", p_size = 15, h_color = "black", h_fill = "white")
+#sticker(picture, s_x = 1, s_width = 0.95, s_height = 0.95, package = "elephant", p_color = "black", p_size = 15, h_color = "black", h_fill = "white")
+knitr::include_graphics("https://yaweige.github.io/post/stickers/elephant.png")
 {% endhighlight %}
+
+![center](.https://yaweige.github.io/post/stickers/elephant.png)
 

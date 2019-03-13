@@ -115,7 +115,7 @@ Compare the three formats. PNG is the largest and SVG is the smallest. The densi
 
 
 {% highlight r %}
-sticker_c <- sticker(c, package = "AdsFunnel", p_size=18, p_color = "#f39c12",
+sticker_c <- sticker(c, package = "lalala", p_size=18, p_color = "#f39c12",
              s_x=1, s_y=1, s_width=1.5, s_height = 1.5, 
              h_fill="#FFFFFF", h_color="#f39c12")
 sticker_c 

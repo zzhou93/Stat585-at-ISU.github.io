@@ -87,9 +87,9 @@ print(butterfly)
 
 {% highlight r %}
 library(hexSticker)
-p <- sticker(butterfly, package = "Vegan", p_color = "darkgreen", h_fill = "white", s_width = 1.2, s_height = 1, s_x = 1, s_y = 0.9, p_x = 1, p_y = 1.65, p_size = 16)
-plot(p)
+sticker(butterfly, package = "Vegan", p_color = "darkgreen", h_fill = "white", s_width = 1.2, s_height = 1, s_x = 1, s_y = 0.9, p_x = 1, p_y = 1.65, p_size = 16)
+knitr::include_graphics("Vegan.png")
 {% endhighlight %}
 
-![center](../figure/08/EnglishLydia/unnamed-chunk-2-3.png)
+![center](.Vegan.png)
 
