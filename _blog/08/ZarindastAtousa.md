@@ -21,26 +21,6 @@ __pdf__: The benefit of using a PDF format is that links can be embedded in the 
 
 {% highlight r %}
 library(classdata)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'classdata'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:GGally':
-## 
-##     happy
-{% endhighlight %}
-
-
-
-{% highlight r %}
 library(ggplot2)
 mojo<-mojo
 
@@ -93,24 +73,9 @@ ggsave("ploti.svg", plot = last_plot(), device = "svg")
 {% highlight r %}
 library(magick)
 tiger <- image_read_svg('http://jeroen.github.io/images/tiger.svg', width = 400)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in loadNamespace(name): there is no package called 'rsvg'
-{% endhighlight %}
-
-
-
-{% highlight r %}
 #t<-image_read('https://github.com/atousaz/atousaz.github.io/blob/master/image/norow.jpg')
 #image_read("https://github.com/atousaz/atousaz.github.io/blob/master/image/norow.jpg")
 image_scale(tiger, "200")
 {% endhighlight %}
 
-
-
-{% highlight text %}
-## Error in assert_image(image): object 'tiger' not found
-{% endhighlight %}
+![center](./../figure/08/ZarindastAtousa/unnamed-chunk-2-1.png)
