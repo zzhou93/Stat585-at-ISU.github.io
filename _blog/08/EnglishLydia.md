@@ -50,7 +50,7 @@ tx <- txhousing %>%
 tx
 {% endhighlight %}
 
-![center](../figure/08/EnglishLydia/unnamed-chunk-1-1.png)
+![center](./../figure/08/EnglishLydia/unnamed-chunk-1-1.png)
 
 {% highlight r %}
 # saving to different formats - assuming this saves to the working directory
@@ -83,7 +83,7 @@ print(butterfly)
 ## 1 PNG      225    225 sRGB       TRUE    103507 57x57
 {% endhighlight %}
 
-![center](../figure/08/EnglishLydia/unnamed-chunk-2-1.png)
+
 
 {% highlight r %}
 library(hexSticker)
@@ -91,5 +91,5 @@ sticker(butterfly, package = "Vegan", p_color = "darkgreen", h_fill = "white", s
 knitr::include_graphics("Vegan.png")
 {% endhighlight %}
 
-![center](.Vegan.png)
+![center](./Vegan.png)
 
