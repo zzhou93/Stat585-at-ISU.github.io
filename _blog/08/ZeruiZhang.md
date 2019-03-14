@@ -51,9 +51,21 @@ root: ../../../
     library(hexSticker)
     image <- image_read("https://cdn1.iconfinder.com/data/icons/halloween-2072/500/halloween-cartoon-horror-cute_4-512.png") %>% image_transparent("gray")
     s <- sticker(image, package = "cat", h_fill="gray", h_color = "black", s_x=1, s_y=0.9, s_width=1.3, s_height=1.2, p_color="yellow", p_family = "serif", p_size = 16, p_y = 1.6)
-    s
+    s %>% print()
     {% endhighlight %}
     
     ![center](../figure/08/ZeruiZhang/unnamed-chunk-2-1.png)
+    
+    {% highlight r %}
+    s
+    {% endhighlight %}
+    
+    ![center](../figure/08/ZeruiZhang/unnamed-chunk-2-2.png)
+    
+    {% highlight r %}
+    knitr::include_graphics("https://raw.githubusercontent.com/zeruiz/zeruiz.github.io/master/cat.png")
+    {% endhighlight %}
+    
+    ![center](.https://raw.githubusercontent.com/zeruiz/zeruiz.github.io/master/cat.png)
 
 
