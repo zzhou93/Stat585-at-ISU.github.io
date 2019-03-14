@@ -64,4 +64,4 @@ sticker <- sticker(rabbit, package = "rabbitr", s_x = 1, s_y = 1, s_width = 1, s
 sticker
 {% endhighlight %}
 
-![center](../figure/08/ZhangYudi/unnamed-chunk-2-1.png)
+![center](./../figure/08/ZhangYudi/unnamed-chunk-2-1.png)

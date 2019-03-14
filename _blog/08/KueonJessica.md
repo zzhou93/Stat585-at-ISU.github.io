@@ -116,7 +116,7 @@ peng_sticker <- sticker(peng2, package = "penguin", s_x = 1, s_width = 0.8, s_he
 peng_sticker
 {% endhighlight %}
 
-![center](../figure/08/KueonJessica/unnamed-chunk-2-1.png)
+![center](./../figure/08/KueonJessica/unnamed-chunk-2-1.png)
 
 
 

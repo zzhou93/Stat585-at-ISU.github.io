@@ -47,7 +47,7 @@ head(mtcars)
 mtcars %>% ggplot() + geom_point(aes(x=hp,y=mpg,color=hp)) + facet_grid(~cyl)
 {% endhighlight %}
 
-![center](../figure/08/JingZhao/unnamed-chunk-1-1.png)
+![center](./../figure/08/JingZhao/unnamed-chunk-1-1.png)
 
 {% highlight r %}
   ggsave("mpg_cyl.pdf") +
@@ -97,14 +97,14 @@ print(img)
 ## 8 GIF      365    360 sRGB       TRUE     73623 72x72
 {% endhighlight %}
 
-![center](../figure/08/JingZhao/unnamed-chunk-2-1.gif)
+![center](./../figure/08/JingZhao/unnamed-chunk-2-1.gif)
 
 {% highlight r %}
 sticker <- sticker(img, package = "Banana", s_x = 1, s_y = 1, s_width = 1, s_height = 1, h_fill = "purple")
 sticker
 {% endhighlight %}
 
-![center](../figure/08/JingZhao/unnamed-chunk-2-3.png)
+![center](./../figure/08/JingZhao/unnamed-chunk-2-3.png)
 
 
 

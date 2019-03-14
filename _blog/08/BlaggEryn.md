@@ -58,7 +58,7 @@ oceana<-image_ggplot(ocean)
 oceana
 {% endhighlight %}
 
-![center](../figure/08/BlaggEryn/unnamed-chunk-3-1.png)
+![center](./../figure/08/BlaggEryn/unnamed-chunk-3-1.png)
 
 
 {% highlight r %}
@@ -105,7 +105,7 @@ oceanean<- sticker(wave, s_x=1, s_y=.9,s_width=1.5, s_height=1.5, package = "Oce
 oceanean
 {% endhighlight %}
 
-![center](../figure/08/BlaggEryn/unnamed-chunk-9-1.png)
+![center](./../figure/08/BlaggEryn/unnamed-chunk-9-1.png)
 
 ## Instructions:
 

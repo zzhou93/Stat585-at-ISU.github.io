@@ -47,7 +47,7 @@ iris %>%
   geom_point(aes(color= Species))
 {% endhighlight %}
 
-![center](../figure/08/HeQing/unnamed-chunk-1-1.png)
+![center](./../figure/08/HeQing/unnamed-chunk-1-1.png)
 
 {% highlight r %}
   ggsave("irisWvsL.png")
@@ -77,7 +77,7 @@ print(pickle)
 ## 1 PNG      605    800 sRGB       TRUE    208799 28x28
 {% endhighlight %}
 
-![center](../figure/08/HeQing/unnamed-chunk-2-1.png)
+![center](./../figure/08/HeQing/unnamed-chunk-2-1.png)
 
 {% highlight r %}
 print(cats)
@@ -92,7 +92,7 @@ print(cats)
 ## 1 JPEG     750   1000 sRGB       FALSE   157467 72x72
 {% endhighlight %}
 
-![center](../figure/08/HeQing/unnamed-chunk-2-2.png)
+![center](./../figure/08/HeQing/unnamed-chunk-2-2.png)
 
 {% highlight r %}
 pickle <- image_scale(pickle, "x300")
@@ -103,13 +103,13 @@ picklecats<-image_crop(picklecats, "350x350")
 picklecats
 {% endhighlight %}
 
-![center](../figure/08/HeQing/unnamed-chunk-2-3.png)
+![center](./../figure/08/HeQing/unnamed-chunk-2-3.png)
 
 {% highlight r %}
 sticker <- sticker(picklecats, package="Pickle", s_x = 1,s_y = 1,s_width = 1.2, s_height = 1.2, p_y = 0.5, p_size=20, h_fill = "black")
 sticker
 {% endhighlight %}
 
-![center](../figure/08/HeQing/unnamed-chunk-2-7.png)
+![center](./../figure/08/HeQing/unnamed-chunk-2-7.png)
 
 

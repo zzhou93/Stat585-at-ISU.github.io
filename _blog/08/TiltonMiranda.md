@@ -26,11 +26,49 @@ Of the three formats, PNG is a raster image format while SVG and PDF are vector 
 {% highlight r %}
 library(ggplot2)
 library(magrittr)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 
+## Attaching package: 'magrittr'
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from 'package:purrr':
+## 
+##     set_names
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from 'package:tidyr':
+## 
+##     extract
+{% endhighlight %}
+
+
+
+{% highlight r %}
 if (!require("datasauRus")) {
   devtools::install_github("lockedata/datasauRus")
   library("datasauRus")
 }
+{% endhighlight %}
 
+
+
+{% highlight text %}
+## Loading required package: datasauRus
+{% endhighlight %}
+
+
+
+{% highlight r %}
 dino <- datasaurus_dozen[datasaurus_dozen$dataset == "dino", ]
 
 d <- ggplot(dino) +
@@ -40,7 +78,7 @@ d <- ggplot(dino) +
 d
 {% endhighlight %}
 
-![center](../figure/08/TiltonMiranda/unnamed-chunk-2-1.png)
+![center](./../figure/08/TiltonMiranda/unnamed-chunk-2-1.png)
 
 The traditional way to save a plot is to start a device of the desired format, then call the plot and shut off the device.
 
@@ -57,7 +95,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 
 
@@ -74,7 +112,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 
 
@@ -91,7 +129,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 
 The package ggplot2 also provides the ggsave() function that saves plots in a number of formats.
@@ -138,7 +176,7 @@ st <- sticker(vgg_struct, package = "CoNNOR",
 s <- image_read(file.path(mt_dir, "CoNNOR.png")); s
 {% endhighlight %}
 
-![center](../figure/08/TiltonMiranda/unnamed-chunk-5-1.png)
+![center](./../figure/08/TiltonMiranda/unnamed-chunk-5-1.png)
 
 ### Second sticker
 
@@ -237,7 +275,7 @@ shoe_outline <- shoe %>%
 neuron <- image_read("https://github.com/MirandaTilton/shoe_nnet/raw/master/shoe_images/logo_images/neuron.jpg"); neuron
 {% endhighlight %}
 
-![center](../figure/08/TiltonMiranda/unnamed-chunk-6-1.png)
+![center](./../figure/08/TiltonMiranda/unnamed-chunk-6-1.png)
 
 {% highlight r %}
 # Crop background image to size of mask
@@ -305,10 +343,10 @@ s <- image_read(file.path(mt_dir, "CoNNOR2.png")); s
 
 
 {% highlight text %}
-## Error in magick_image_readpath(path, density, depth, strip): Magick: UnableToOpenBlob `/Users/heike/Documents/Teaching/stat 585/Spring 2019/blog-2019/08/MirandaTilton_blog8/CoNNOR2.png': No such file or directory @ error/blob.c/OpenBlob/2761
+## Error in magick_image_readpath(path, density, depth, strip): Magick: UnableToOpenBlob `/Users/heike/Documents/Teaching/stat 585/Spring 2019/MirandaTilton_blog8/CoNNOR2.png': No such file or directory @ error/blob.c/OpenBlob/2761
 {% endhighlight %}
 
-![center](../figure/08/TiltonMiranda/unnamed-chunk-7-1.png)
+![center](./../figure/08/TiltonMiranda/unnamed-chunk-7-1.png)
 
 
 

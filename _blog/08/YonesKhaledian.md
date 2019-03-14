@@ -93,4 +93,4 @@ sticker_peace <- sticker(imgurl, package="Peace", p_size=12, s_x=1, s_y=.75, s_w
 sticker_peace
 {% endhighlight %}
 
-![center](../figure/08/YonesKhaledian/unnamed-chunk-2-1.png)
+![center](./../figure/08/YonesKhaledian/unnamed-chunk-2-1.png)

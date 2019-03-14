@@ -29,7 +29,7 @@ PDF is a file format that can be used to provide an electronic image of text or 
 ##     map
 {% endhighlight %}
 
-![center](../figure/08/ShiraziAmin/unnamed-chunk-1-1.png)
+![center](./../figure/08/ShiraziAmin/unnamed-chunk-1-1.png)
 The R base functions to save images as your favorite format are `jpeg`, `png()`, `svg()` or `pdf()`. Therefore, using these functions to save our image results as follows. 
 
 ###PNG
@@ -44,7 +44,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 ### PDF
 
@@ -58,7 +58,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 ###SVG
 
@@ -72,7 +72,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 I see that the `svg` format is of high quality and it does keep the quality as the width and height of the image increases. `png` as expected, does not take much space. In this small exercise, I did not see much difference among the file size of `png` and `pdf`
 
@@ -89,4 +89,4 @@ sticker<-sticker(corgi,package="CorGi",p_size=15, p_color="black",p_y=1.6,s_x=1,
 sticker
 {% endhighlight %}
 
-![center](../figure/08/ShiraziAmin/unnamed-chunk-5-1.png)
+![center](./../figure/08/ShiraziAmin/unnamed-chunk-5-1.png)

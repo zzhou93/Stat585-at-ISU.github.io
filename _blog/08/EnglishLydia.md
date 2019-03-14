@@ -83,7 +83,7 @@ print(butterfly)
 ## 1 PNG      225    225 sRGB       TRUE    103507 57x57
 {% endhighlight %}
 
-
+![center](./../figure/08/EnglishLydia/unnamed-chunk-2-1.png)
 
 {% highlight r %}
 library(hexSticker)

@@ -31,7 +31,7 @@ ggplot(data = iris, aes(x = Petal.Length, y = Sepal.Length, color = Species)) +
   geom_point()
 {% endhighlight %}
 
-![center](../figure/08/McClernonKellie/unnamed-chunk-1-1.png)
+![center](./../figure/08/McClernonKellie/unnamed-chunk-1-1.png)
 
 {% highlight r %}
 ggsave("iris.png")
@@ -58,4 +58,4 @@ sticker(newapple, package = "applecrisp",
 knitr::include_graphics("applecrisp.png")
 {% endhighlight %}
 
-![center](.applecrisp.png)
+![center](./applecrisp.png)

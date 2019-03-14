@@ -26,7 +26,7 @@ mtcars %>%
   geom_point(aes(size = hp, fill = hp), pch = 21)
 {% endhighlight %}
 
-![center](../figure/08/NicholsVirginia/cars-1.png)
+![center](./../figure/08/NicholsVirginia/cars-1.png)
 
 {% highlight r %}
 #ggsave("myfig.png")
@@ -84,7 +84,7 @@ image_composite(clth, uten, offset = "+35+60") %>%
                  font = "Trebuchet") 
 {% endhighlight %}
 
-![center](../figure/08/NicholsVirginia/overlay-1.png)
+![center](./../figure/08/NicholsVirginia/overlay-1.png)
 
 Make it without the picnic background becacuse **hexsticker** isn't quite as smart as I want it to be. 
 
@@ -105,5 +105,5 @@ Here is what it should spit out for you:
 image_read("https://vanichols.github.io/hexpractice.png")
 {% endhighlight %}
 
-![center](../figure/08/NicholsVirginia/spit-1.png)
+![center](./../figure/08/NicholsVirginia/spit-1.png)
 

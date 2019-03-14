@@ -36,7 +36,7 @@ p <- iris %>% ggplot( aes(Sepal.Length, Sepal.Width, colour = Species)) +
 p
 {% endhighlight %}
 
-![center](../figure/08/ZhengYing/unnamed-chunk-1-1.png)
+![center](./../figure/08/ZhengYing/unnamed-chunk-1-1.png)
 
 {% highlight r %}
 ggsave("plot.pdf", plot=p, width = 8, height =6)
@@ -73,7 +73,7 @@ sticker(Doraemon, s_x = 1, s_width = 0.8, s_height = 0.8, package = "Doraemon", 
 knitr::include_graphics("https://raw.githubusercontent.com/floatgreen/Introduction_to_R/master/Doraemon.png")
 {% endhighlight %}
 
-![center](.https://raw.githubusercontent.com/floatgreen/Introduction_to_R/master/Doraemon.png)
+![center](./https://raw.githubusercontent.com/floatgreen/Introduction_to_R/master/Doraemon.png)
 
 
 

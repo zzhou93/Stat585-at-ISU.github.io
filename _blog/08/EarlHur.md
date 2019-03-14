@@ -36,7 +36,7 @@ Write a blog post answering the following questions and detailing the progress:
 {% endhighlight %}
 
 
-![center](../figure/08/EarlHur/unnamed-chunk-2-1.png)
+![center](./../figure/08/EarlHur/unnamed-chunk-2-1.png)
 
 
 {% highlight r %}
@@ -62,5 +62,5 @@ sticker(broncos, package = "Broncos",
 knitr::include_graphics("Broncos.png")
 {% endhighlight %}
 
-![center](.Broncos.png)
+![center](./Broncos.png)
 

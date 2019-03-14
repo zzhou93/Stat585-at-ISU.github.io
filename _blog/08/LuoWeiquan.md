@@ -37,13 +37,13 @@ Table: Comparision between Resulting Graphic foramat
 Table: Summary of Comparision between Graphic foramat
 
   A cross-check table for comparision from the 95VISUAL is attached at below.
-<img src=".https://www.95visual.com/sites/default/files/images/inline/file_format_chart.png" title="file_format_chart.png" alt="file_format_chart.png" width="40%" />
+<img src="./https://www.95visual.com/sites/default/files/images/inline/file_format_chart.png" title="file_format_chart.png" alt="file_format_chart.png" width="40%" />
 
 2. **Use `magick` functionality to create an image to be used for a hex sticker.**  package `hexSticker` can help you to get started on dimensions of the sticker. **Include all code necessary to produce your sticker.** In case you are using local images, post those in a folder on **your** website and use the URL to link to them.
 
 * the following is my code to generate a hex sticker.
 
-<img src=".https://github.com/WeiquanLuo/WeiquanLuo.github.io/raw/master/IFEWBNet.png" title="IFEWBNet.png" alt="IFEWBNet.png" width="50%" />
+<img src="./https://github.com/WeiquanLuo/WeiquanLuo.github.io/raw/master/IFEWBNet.png" title="IFEWBNet.png" alt="IFEWBNet.png" width="50%" />
 
 Reference: 
 

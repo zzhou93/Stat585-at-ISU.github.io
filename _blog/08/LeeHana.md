@@ -71,4 +71,4 @@ Rsticker <- sticker(Rlogo, package="R HANA",
 Rsticker
 {% endhighlight %}
 
-![center](../figure/08/LeeHana/unnamed-chunk-2-1.png)
+![center](./../figure/08/LeeHana/unnamed-chunk-2-1.png)

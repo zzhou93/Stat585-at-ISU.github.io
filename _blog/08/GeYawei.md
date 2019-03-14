@@ -34,7 +34,7 @@ p <- mtcars %>%
 p
 {% endhighlight %}
 
-![center](../figure/08/GeYawei/unnamed-chunk-1-1.png)
+![center](./../figure/08/GeYawei/unnamed-chunk-1-1.png)
 
 {% highlight r %}
 #ggsave(file="p.svg", plot=p, width=10, height=10)
@@ -62,5 +62,5 @@ picture <- picture %>%
 knitr::include_graphics("https://yaweige.github.io/post/stickers/elephant.png")
 {% endhighlight %}
 
-![center](.https://yaweige.github.io/post/stickers/elephant.png)
+![center](./https://yaweige.github.io/post/stickers/elephant.png)
 

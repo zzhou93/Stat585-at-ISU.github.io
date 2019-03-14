@@ -32,7 +32,7 @@ root: ../../../
     p
     {% endhighlight %}
     
-    ![center](../figure/08/ZeruiZhang/unnamed-chunk-1-1.png)
+    ![center](./../figure/08/ZeruiZhang/unnamed-chunk-1-1.png)
     
     {% highlight r %}
     ggsave("~/Desktop/p.png")
@@ -54,18 +54,18 @@ root: ../../../
     s %>% print()
     {% endhighlight %}
     
-    ![center](../figure/08/ZeruiZhang/unnamed-chunk-2-1.png)
+    ![center](./../figure/08/ZeruiZhang/unnamed-chunk-2-1.png)
     
     {% highlight r %}
     s
     {% endhighlight %}
     
-    ![center](../figure/08/ZeruiZhang/unnamed-chunk-2-2.png)
+    ![center](./../figure/08/ZeruiZhang/unnamed-chunk-2-2.png)
     
     {% highlight r %}
     knitr::include_graphics("https://raw.githubusercontent.com/zeruiz/zeruiz.github.io/master/cat.png")
     {% endhighlight %}
     
-    ![center](.https://raw.githubusercontent.com/zeruiz/zeruiz.github.io/master/cat.png)
+    ![center](./https://raw.githubusercontent.com/zeruiz/zeruiz.github.io/master/cat.png)
 
 

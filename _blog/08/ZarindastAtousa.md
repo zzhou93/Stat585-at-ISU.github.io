@@ -21,6 +21,26 @@ __pdf__: The benefit of using a PDF format is that links can be embedded in the 
 
 {% highlight r %}
 library(classdata)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 
+## Attaching package: 'classdata'
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from 'package:GGally':
+## 
+##     happy
+{% endhighlight %}
+
+
+
+{% highlight r %}
 library(ggplot2)
 mojo<-mojo
 
@@ -31,7 +51,7 @@ d$WeekNo<-factor(d$WeekNo)
 ggplot(data=d, aes(x=WeekNo,y=Total_Gross))+facet_wrap(~Title)+geom_bar(stat = "Identity")
 {% endhighlight %}
 
-![center](../figure/08/ZarindastAtousa/unnamed-chunk-1-1.png)
+![center](./../figure/08/ZarindastAtousa/unnamed-chunk-1-1.png)
 
 {% highlight r %}
 ggsave("ploti.pdf", plot = last_plot(), device = "pdf")

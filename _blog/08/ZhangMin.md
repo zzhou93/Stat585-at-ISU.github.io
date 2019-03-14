@@ -98,4 +98,4 @@ s <- sticker(p, package = "AdsFunnel", p_size=18, p_color = "#f39c12",
 s
 {% endhighlight %}
 
-![center](../figure/08/ZhangMin/unnamed-chunk-4-1.png)
+![center](./../figure/08/ZhangMin/unnamed-chunk-4-1.png)

@@ -121,4 +121,4 @@ sticker_c <- sticker(c, package = "lalala", p_size=18, p_color = "#f39c12",
 sticker_c 
 {% endhighlight %}
 
-![center](../figure/08/ZhangXin/unnamed-chunk-3-1.png)
+![center](./../figure/08/ZhangXin/unnamed-chunk-3-1.png)

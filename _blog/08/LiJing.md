@@ -43,7 +43,7 @@ rain %>%
   scale_x_date(date_labels = "%b")
 {% endhighlight %}
 
-![center](../figure/08/LiJing/unnamed-chunk-2-1.png)
+![center](./../figure/08/LiJing/unnamed-chunk-2-1.png)
 
 {% highlight r %}
 ggsave(file='rain.svg')
@@ -89,4 +89,4 @@ sticker <- sticker(dudu, package="Dudu", s_x = 1,s_y = 0.9,s_width = 2, s_height
 sticker
 {% endhighlight %}
 
-![center](../figure/08/LiJing/unnamed-chunk-3-1.png)
+![center](./../figure/08/LiJing/unnamed-chunk-3-1.png)

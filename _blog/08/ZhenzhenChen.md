@@ -97,4 +97,4 @@ pic1 <- sticker(zzc, package = "ZC", h_fill = "white", s_width = 1, s_height = 1
 print(pic1)
 {% endhighlight %}
 
-![center](../figure/08/ZhenzhenChen/unnamed-chunk-3-1.png)
+![center](./../figure/08/ZhenzhenChen/unnamed-chunk-3-1.png)

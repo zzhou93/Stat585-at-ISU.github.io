@@ -66,7 +66,7 @@ plot <- ggplot(stocks.data, aes(Date)) +
 plot        
 {% endhighlight %}
 
-![center](../figure/08/AguilarOscar/unnamed-chunk-2-1.png)
+![center](./../figure/08/AguilarOscar/unnamed-chunk-2-1.png)
 
 Here we save the plot using the three different formats.
 
@@ -126,12 +126,12 @@ hector_sticker <- sticker(hector, package = "Salsa", p_size = 15, p_color = 'bla
 hector_sticker
 {% endhighlight %}
 
-![center](../figure/08/AguilarOscar/unnamed-chunk-4-1.png)
+![center](./../figure/08/AguilarOscar/unnamed-chunk-4-1.png)
 
 {% highlight r %}
 ## Here we include the sticker just in case
 knitr::include_graphics('https://oscarm524.github.io/salsa.png')
 {% endhighlight %}
 
-![center](.https://oscarm524.github.io/salsa.png)
+![center](./https://oscarm524.github.io/salsa.png)
 

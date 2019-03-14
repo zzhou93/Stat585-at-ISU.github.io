@@ -23,11 +23,39 @@ My sources:
 {% highlight r %}
 library(ggplot2)
 library(MASS)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 
+## Attaching package: 'MASS'
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked _by_ '.GlobalEnv':
+## 
+##     cats
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from 'package:dplyr':
+## 
+##     select
+{% endhighlight %}
+
+
+
+{% highlight r %}
 crab<-ggplot(data = crabs, aes(x = sp, y = FL, fill = sex)) + geom_boxplot()
 crab
 {% endhighlight %}
 
-![center](../figure/08/HouJing/unnamed-chunk-1-1.png)
+![center](./../figure/08/HouJing/unnamed-chunk-1-1.png)
 
 {% highlight r %}
 ggsave("crab.png", height = 5,width = 5)
@@ -48,4 +76,4 @@ pusheen<-sticker(cat, package="Busy", p_size=8, p_color="black", p_x=1, p_y=1.6,
 pusheen
 {% endhighlight %}
 
-![center](../figure/08/HouJing/unnamed-chunk-2-1.png)
+![center](./../figure/08/HouJing/unnamed-chunk-2-1.png)

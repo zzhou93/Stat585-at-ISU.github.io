@@ -63,7 +63,7 @@ plot <- data.frame(fill = sample(factor(1:10), 900, replace = TRUE, prob = probs
 plot
 {% endhighlight %}
 
-![center](../figure/08/GoodeKatherine/unnamed-chunk-1-1.png)
+![center](./../figure/08/GoodeKatherine/unnamed-chunk-1-1.png)
 
 The code below saves the image as png, svg, and pdf files. I have set it not to compile (anymore). When I tried opening the files on my computer, I could view both the png and pdf files, but the svg file opened in RStudio as a file with a lot of text that was meaningless to me. The size of the files were as follows.
 
@@ -115,5 +115,5 @@ star_sticker <- sticker(star,
 star_sticker
 {% endhighlight %}
 
-![center](../figure/08/GoodeKatherine/unnamed-chunk-3-1.png)
+![center](./../figure/08/GoodeKatherine/unnamed-chunk-3-1.png)
 

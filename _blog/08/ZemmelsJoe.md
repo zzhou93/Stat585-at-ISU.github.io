@@ -41,7 +41,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 
 
@@ -77,7 +77,7 @@ sticker <- sticker(image,package="csafe",p_size=25, p_color="white",p_y=1.6,s_x=
 sticker
 {% endhighlight %}
 
-![center](../figure/08/ZemmelsJoe/unnamed-chunk-2-1.png)
+![center](./../figure/08/ZemmelsJoe/unnamed-chunk-2-1.png)
 
 {% highlight r %}
 #Played around with these colors so that the inside of the logo was made transparent too:
@@ -88,6 +88,6 @@ sticker <- sticker(image,package="csafe",p_size=25, p_color="gray40",p_y=1.6,s_x
 sticker
 {% endhighlight %}
 
-![center](../figure/08/ZemmelsJoe/unnamed-chunk-2-2.png)
+![center](./../figure/08/ZemmelsJoe/unnamed-chunk-2-2.png)
 
 I can't seem to stop the "csafe.png" file from being created. I would like to just print it out, but it seems to want to save it as a file.

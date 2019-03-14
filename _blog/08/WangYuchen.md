@@ -28,7 +28,7 @@ p <- mtcars %>% ggplot(aes(mpg, wt)) + geom_point()
 print(p)
 {% endhighlight %}
 
-![center](../figure/08/WangYuchen/unnamed-chunk-2-1.png)
+![center](./../figure/08/WangYuchen/unnamed-chunk-2-1.png)
 
 
 {% highlight r %}
@@ -41,7 +41,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 
 
@@ -56,7 +56,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 
 
@@ -71,7 +71,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 
 
@@ -91,7 +91,7 @@ print(p_pdf)
 ## 1 PNG     2100   2100 sRGB       TRUE         0 72x72
 {% endhighlight %}
 
-![center](../figure/08/WangYuchen/unnamed-chunk-4-1.png)
+![center](./../figure/08/WangYuchen/unnamed-chunk-4-1.png)
 
 {% highlight r %}
 p_png <- image_read("p.png")
@@ -107,7 +107,7 @@ print(p_png)
 ## 1 PNG      480    480 sRGB       TRUE     16902 72x72
 {% endhighlight %}
 
-![center](../figure/08/WangYuchen/unnamed-chunk-4-2.png)
+![center](./../figure/08/WangYuchen/unnamed-chunk-4-2.png)
 
 {% highlight r %}
 p_svg <- image_read_svg("p.svg")
@@ -155,4 +155,4 @@ p.1 <- sticker(p,
 p.1
 {% endhighlight %}
 
-![center](../figure/08/WangYuchen/unnamed-chunk-5-1.png)
+![center](./../figure/08/WangYuchen/unnamed-chunk-5-1.png)

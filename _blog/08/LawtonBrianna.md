@@ -110,19 +110,19 @@ Although, the size of the file is different. All three formats of the image look
 knitr::include_graphics("https://brlaw17.github.io/travel.svg")
 {% endhighlight %}
 
-![center](.https://brlaw17.github.io/travel.svg)
+![center](./https://brlaw17.github.io/travel.svg)
 
 {% highlight r %}
 knitr::include_graphics("https://brlaw17.github.io/travel.pdf")
 {% endhighlight %}
 
-![center](.https://brlaw17.github.io/travel.pdf)
+![center](./https://brlaw17.github.io/travel.pdf)
 
 {% highlight r %}
 knitr::include_graphics("https://brlaw17.github.io/travel.png")
 {% endhighlight %}
 
-![center](.https://brlaw17.github.io/travel.png)
+![center](./https://brlaw17.github.io/travel.png)
 
 2. **Use `magick` functionality to create an image to be used for a hex sticker.**  package `hexSticker` can help you to get started on dimensions of the sticker. **Include all code necessary to produce your sticker.** In case you are using local images, post those in a folder on **your** website and use the URL to link to them.
 
@@ -147,7 +147,7 @@ print(pisa)
 ## 1 JPEG    3024   4032 sRGB       FALSE  2793400 72x72
 {% endhighlight %}
 
-![center](../figure/08/LawtonBrianna/unnamed-chunk-3-1.png)
+![center](./../figure/08/LawtonBrianna/unnamed-chunk-3-1.png)
 
 {% highlight r %}
 #convert image format from JPG to PNG
@@ -171,7 +171,7 @@ image_info(pisa_png)
 image_scale(pisa, "x400") # height: 300px
 {% endhighlight %}
 
-![center](../figure/08/LawtonBrianna/unnamed-chunk-3-2.png)
+![center](./../figure/08/LawtonBrianna/unnamed-chunk-3-2.png)
 
 {% highlight r %}
 sticker(pisa, package = "Brianna's hexSticker",  p_size=8, s_x=1, s_y=.75, s_width=1.3, s_height=1,
@@ -185,4 +185,4 @@ sticker(pisa, package = "Brianna's hexSticker",  p_size=8, s_x=1, s_y=.75, s_wid
 knitr::include_graphics("https://brlaw17.github.io/pisa.png")
 {% endhighlight %}
 
-![center](.https://brlaw17.github.io/pisa.png)
+![center](./https://brlaw17.github.io/pisa.png)

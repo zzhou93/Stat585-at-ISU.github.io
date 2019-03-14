@@ -33,7 +33,7 @@ diamondimg
 ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 {% endhighlight %}
 
-![center](../figure/08/KhoshmaneshZahra/unnamed-chunk-1-1.png)
+![center](./../figure/08/KhoshmaneshZahra/unnamed-chunk-1-1.png)
 
 {% highlight r %}
 ggsave("diamondimg.png")
@@ -103,7 +103,7 @@ print(symphony)
 ## 1 JPEG     900    450 sRGB       FALSE   405942 72x72
 {% endhighlight %}
 
-![center](../figure/08/KhoshmaneshZahra/unnamed-chunk-2-1.png)
+![center](./../figure/08/KhoshmaneshZahra/unnamed-chunk-2-1.png)
 
 ##### USE magick to edit the image
 
@@ -113,14 +113,14 @@ print(symphony)
 image_border(image_background(symphony, "hotpink"), "#000080", "20x10")
 {% endhighlight %}
 
-![center](../figure/08/KhoshmaneshZahra/unnamed-chunk-3-1.png)
+![center](./../figure/08/KhoshmaneshZahra/unnamed-chunk-3-1.png)
 
 {% highlight r %}
 # Trim margins
 image_trim(symphony)
 {% endhighlight %}
 
-![center](../figure/08/KhoshmaneshZahra/unnamed-chunk-3-2.png)
+![center](./../figure/08/KhoshmaneshZahra/unnamed-chunk-3-2.png)
 
 
 
@@ -130,7 +130,7 @@ scalimg <-image_scale(symphony, "x200") # height: 300px
 scalimg
 {% endhighlight %}
 
-![center](../figure/08/KhoshmaneshZahra/unnamed-chunk-4-1.png)
+![center](./../figure/08/KhoshmaneshZahra/unnamed-chunk-4-1.png)
 
 
 
@@ -140,7 +140,7 @@ rotateimg <-image_rotate(scalimg, 45)
 rotateimg
 {% endhighlight %}
 
-![center](../figure/08/KhoshmaneshZahra/unnamed-chunk-5-1.png)
+![center](./../figure/08/KhoshmaneshZahra/unnamed-chunk-5-1.png)
 
 
 
@@ -150,7 +150,7 @@ negateimg<-image_negate(scalimg)
 negateimg
 {% endhighlight %}
 
-![center](../figure/08/KhoshmaneshZahra/unnamed-chunk-6-1.png)
+![center](./../figure/08/KhoshmaneshZahra/unnamed-chunk-6-1.png)
 
 
 {% highlight r %}
@@ -158,7 +158,7 @@ negateimg
 image_blur(scalimg, 10, 5)
 {% endhighlight %}
 
-![center](../figure/08/KhoshmaneshZahra/unnamed-chunk-7-1.png)
+![center](./../figure/08/KhoshmaneshZahra/unnamed-chunk-7-1.png)
 
 
 ##### using package hexsticker to make sticker
@@ -176,7 +176,7 @@ p <- sticker(scalimg , package = "Happy Nowruz", p_color = "black", h_fill = "li
 plot(p)
 {% endhighlight %}
 
-![center](../figure/08/KhoshmaneshZahra/unnamed-chunk-8-1.png)
+![center](./../figure/08/KhoshmaneshZahra/unnamed-chunk-8-1.png)
 
 
 

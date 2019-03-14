@@ -37,4 +37,4 @@ panda <- image_read('https://upload.wikimedia.org/wikipedia/commons/8/8e/Panda_v
 sticker(panda, package = "pandas", s_x = 1, s_width = 0.8, s_height = 1, p_y = 1.5, p_color = "black", h_fill = "lightskyblue") %>% print
 {% endhighlight %}
 
-![center](../figure/08/QiaoYang/unnamed-chunk-2-1.png)
+![center](./../figure/08/QiaoYang/unnamed-chunk-2-1.png)

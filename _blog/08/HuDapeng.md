@@ -48,4 +48,4 @@ sticker(NMA_plot, package = "NetworkMA", p_size=13, p_x = 1, p_y = 0.45, p_color
              h_fill="#FFF5EE", h_color="#FF1493") %>% print
 {% endhighlight %}
 
-![center](../figure/08/HuDapeng/unnamed-chunk-3-1.png)
+![center](./../figure/08/HuDapeng/unnamed-chunk-3-1.png)

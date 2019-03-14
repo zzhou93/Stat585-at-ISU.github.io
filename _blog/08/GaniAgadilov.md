@@ -43,7 +43,7 @@ density <- ggplot(midwest, aes(x=area, y=poptotal)) +
 density
 {% endhighlight %}
 
-![center](../figure/08/GaniAgadilov/unnamed-chunk-1-1.png)
+![center](./../figure/08/GaniAgadilov/unnamed-chunk-1-1.png)
 
 {% highlight r %}
 # Save files in three different formats.
@@ -104,7 +104,7 @@ print(statlogo)
 ## 1 PNG      208    242 sRGB       FALSE     7390 72x72
 {% endhighlight %}
 
-![center](../figure/08/GaniAgadilov/unnamed-chunk-2-1.png)
+![center](./../figure/08/GaniAgadilov/unnamed-chunk-2-1.png)
 
 {% highlight r %}
 #Create the sticker

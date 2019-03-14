@@ -66,7 +66,7 @@ sticker <- sticker(image,package="csafe",p_size=25, p_color="white",p_y=1.6,s_x=
 sticker
 {% endhighlight %}
 
-![center](../figure/08/XiyuanSun/unnamed-chunk-1-1.png)
+![center](./../figure/08/XiyuanSun/unnamed-chunk-1-1.png)
 
 
 

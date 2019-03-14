@@ -24,7 +24,7 @@ plot
 ## Warning: Removed 568 rows containing missing values (geom_path).
 {% endhighlight %}
 
-![center](../figure/08/GulzinaKuttubekova/unnamed-chunk-1-1.png)
+![center](./../figure/08/GulzinaKuttubekova/unnamed-chunk-1-1.png)
 <br> Now we have to save this plot using three different image formats:
 
 {% highlight r %}
@@ -49,7 +49,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 
 
@@ -76,7 +76,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
 
 
@@ -103,7 +103,7 @@ dev.off()
 
 {% highlight text %}
 ## quartz_off_screen 
-##                 3
+##                 2
 {% endhighlight %}
  Personally, I did not see any significant difference. Only quality of pdf image appears to be higher. Also mac does support svg format images, so I could not open it.
 
@@ -132,7 +132,7 @@ stat_cat_sticker <- sticker(subplot = stat_cat,
 stat_cat_sticker
 {% endhighlight %}
 
-![center](../figure/08/GulzinaKuttubekova/unnamed-chunk-4-1.png)
+![center](./../figure/08/GulzinaKuttubekova/unnamed-chunk-4-1.png)
 <br> I always wanted to create my own logo or sticker. So this assignment was really helpful. Actually I have my own image I wanted to depict in sticker, but R insisted on that it's corrupted.. So I borrowed github logo for this post. [Colors](https://www.schemecolor.com/germany-flag-colors.php) are chosen specially for this post.
 
 
