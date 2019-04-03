@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \#1.
 
     library(xml2)
@@ -29,11 +30,58 @@ I looked at HTML colors. Colors can be specified by names, RGB values,
 HEX values, HSL values, RGBA values, and HSLA values. And not only the
 background, the text can have color, the border can also have color!
 Plus, we can make the color somewhat transpant, just like R.
+=======
+---
+title: "A Series of Tubes..."
+author: "Yudi Zhang"
+topic: "09"
+layout: post
+root: ../../../
+output: 
+  html_document: 
+    css: extra.css
+---
+
+#1.
+
+
+```r
+library(xml2)
+library(tidyverse)
+current_weather <- function(code) {
+  assertthat::see_if(is.character(code), msg = "Input must be a character")
+  url <- paste0("https://w1.weather.gov/xml/current_obs/", code, ".xml")
+  xml <- read_xml(url)
+  nodeset <- xml %>% xml_children 
+  name <- nodeset %>% xml_name
+  content <- nodeset %>% xml_text
+  dat <- as.data.frame(matrix(content, ncol = length(content), byrow = T), stringsAsFactors = F)
+  colnames(dat) <- name
+  res <- dat %>% dplyr::select(station_id, latitude, longitude, observation_time, 
+                      weather, temperature_string, wind_dir, wind_mph)
+  checkmate::checkDataFrame(res)
+  return(res)
+}
+current_weather("KAMW")
+```
+
+```
+##   station_id latitude longitude                         observation_time
+## 1       KAMW 41.99056 -93.61889 Last Updated on Apr 3 2019, 12:53 pm CDT
+##    weather temperature_string wind_dir wind_mph
+## 1 Overcast    54.0 F (12.2 C)    South      9.2
+```
+
+#2. 
+
+I looked at HTML colors. Colors can be specified by names, RGB values, HEX values, HSL values, RGBA values, and HSLA values. And not only the background, the text can have color, the border can also have color! Plus, we can make the color somewhat transpant, just like R.
+>>>>>>> blog 9 posts up
 
 -lists:
 
 <html>
 <body>
+<<<<<<< HEAD
 <h2>
 Where will you do during the spring break?
 </h2>
@@ -70,12 +118,45 @@ website</a>
 <pre class="r">
 -   What differences are there in the HTML markup for R code chunks and
     R output blocks?
+=======
+
+<h2>Where will you do during the spring break?</h2>
+
+<ul style="list-style-type:circle;">
+  <li>Stay at home, do nothing.</li>
+  <li>Stay at home, finish your CC!!!</li>
+  <li>Out of tiwn for fun.</li>
+</ul>  
+
+</body>
+</html>
+
+-color:
+
+<h1 style="border: 2px solid Tomato;">It's Spring Break ;) How about watching a movie???</h1>
+
+-links:
+
+<a href="https://en.wikipedia.org/wiki/Audrey_Hepburn" target="_blank">Audrey's website</a>
+
+#3.
+
+- What types of tags did you find? 
+Background color and color, font size and line height.
+
+- How are code chunks formatted in HTML?
+
+<pre class="r">
+
+- What differences are there in the HTML markup for R code chunks and R output blocks?
+>>>>>>> blog 9 posts up
 
 In HTML the output starts like this:
 
 <pre>
 <code class="hljs">
 
+<<<<<<< HEAD
 Other are quite the same, except that the output of Attaching packages,
 in R, it generates different colors, but in HTML, it is just black.
 
@@ -166,3 +247,85 @@ in R, it generates different colors, but in HTML, it is just black.
       magick::image_read()
 
 <img src="../figure/09/ZhangYudi/unnamed-chunk-2-1.png" width="220" />
+=======
+Other are quite the same, except that the output of Attaching packages, in R, it generates different colors, but in HTML, it is just black.
+
+#4.
+
+
+```r
+library(rvest)
+library(magrittr)
+url <- "https://en.wikipedia.org/wiki/Audrey_Hepburn"
+
+table <- url %>% 
+  read_html() %>% 
+  html_nodes("table.vcard") %>%
+  html_table(header=F) 
+table %>% pander::pander()
+```
+
+
+
+  *
+
+    --------------------------------------------------
+           X1                        X2
+    ----------------- --------------------------------
+     Audrey Hepburn            Audrey Hepburn
+
+     Hepburn in 1956          Hepburn in 1956
+
+          Born                Audrey Kathleen
+                          Ruston(1929-05-04)4 May
+                       1929Ixelles, Brussels, Belgium
+
+          Died          20 January 1993(1993-01-20)
+                         (aged 63)Tolochenaz, Vaud,
+                                Switzerland
+
+      Resting place         Tolochenaz Cemetery,
+                              Tolochenaz, Vaud
+
+       Nationality                British
+
+       Occupation                 Actress
+                          (1948–1989)Humanitarian
+                                (1988–1992)
+
+        Spouse(s)           Mel Ferrer(m. 1954;
+                              div. 1968)Andrea
+                         Dotti(m. 1969; div. 1982)
+
+       Partner(s)      Robert Wolders(1980–1993; her
+                                   death)
+
+        Children                     2
+
+        Parent(s)            Baroness Ella van
+                       HeemstraJoseph Victor Anthony
+                                   Ruston
+
+        Relatives            Baron Aarnoud van
+                             Heemstra(maternal
+                              grandfather)Emma
+                           Ferrer(granddaughter)
+
+        Signature                Signature
+
+    --------------------------------------------------
+
+
+<!-- end of list -->
+
+```r
+url %>% read_html() %>% 
+  html_node("img") %>% 
+  html_attr("src") %>%
+  paste0("https:",.) %>%
+  magick::image_read()
+```
+
+![center](./../figure/09/ZhangYudi/unnamed-chunk-2-1.png)
+
+>>>>>>> blog 9 posts up
