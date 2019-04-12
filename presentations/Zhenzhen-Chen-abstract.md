@@ -1,6 +1,6 @@
 ---
 author: Zhenzhen Chen, Yawei Ge, Weiquan Luo
-title: The ggfun Package
+title: The ggfun package
 topic: "Presentations"
 layout: post
 root: ../../../
