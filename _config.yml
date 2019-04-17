@@ -21,6 +21,8 @@ navigation:
     - blog
 - text: Final Projects
   url: /projects.html
+- text: Final Presentations
+  url: /presentations.html
 collections:
   blog:
     output: true
