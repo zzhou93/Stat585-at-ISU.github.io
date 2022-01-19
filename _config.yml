@@ -15,7 +15,7 @@ navigation:
 - text: Labs
   url: /labs.html
 - text: Blog
-  url: /blog-2019
+  url: /blog-2022
   layout:
     - post
     - blog
@@ -26,7 +26,7 @@ navigation:
 collections:
   blog:
     output: true
-    permalink: /blog-2019/:path
+    permalink: /blog-2022/:path
   topics:
     output: true
-    permalink: /blog-2019/:path/
+    permalink: /blog-2022/:path/
