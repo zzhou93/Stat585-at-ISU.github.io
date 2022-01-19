@@ -30,3 +30,5 @@ collections:
   topics:
     output: true
     permalink: /blog-2022/:path/
+
+theme: jekyll-theme-minimal
