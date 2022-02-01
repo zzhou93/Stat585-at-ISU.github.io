@@ -15,7 +15,7 @@ navigation:
 - text: Labs
   url: /labs.html
 - text: Blog
-  url: /blog
+  url: /blog-2022
   layout:
     - post
     - blog-2022
