@@ -31,4 +31,4 @@ collections:
     output: true
     permalink: /blog-2022/:path/
 
-theme: jekyll-theme-minimal
+theme: jekyll-theme-time-machine
