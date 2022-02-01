@@ -1,10 +1,10 @@
 ---
-title: "XiaolanWan"
-author: "Xiaolan"
-date: "1/22/2022"
-output: html_document
+layout: blog
+topic: "01"
+short-topic: Asking Good Questions
+due-date: 2022-01-27
+root: ../../
 ---
-
 
 ```r
 library(tidyverse)
