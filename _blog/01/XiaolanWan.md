@@ -1,5 +1,7 @@
 ---
-layout: blog
+author: "Xiaolan Wan"
+title: "How to multiply matrices"
+layout: post
 topic: "01"
 short-topic: Asking Good Questions
 due-date: 2022-01-27
