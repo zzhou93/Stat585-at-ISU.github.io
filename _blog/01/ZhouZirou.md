@@ -1,5 +1,7 @@
 ---
-layout: blog
+layout: post
+author: Zirou Zhou
+Title: "Blog 1"
 topic: "01"
 short-topic: Asking Good Questions
 due-date: 2022-01-27
