@@ -1,5 +1,7 @@
 ---
-layout: blog
+layout: post
+author: "Zirou Zhou"
+Title: "Blog 1"
 topic: "01"
 short-topic: Asking Good Questions
 due-date: 2022-01-27
@@ -24,9 +26,11 @@ Follow these links and read through the advice given, then
 Write a blog post answering the following questions: 
 
 2. **Document which question you answered (link to your answer).**
+  
   https://stackoverflow.com/a/70827469/17987705
 
 3. **Relate your experience of answering the question to your reading. **
+  
   This is a Statistic problem by using the R. The poster have a very sepecific request about what he want and the function should be used.
   What I learned from the guaidelines is in the question he posted in a image or pdf, which is easy to read and reproduct. 
   However, his discriptions about what function should be used is not highlighted in the text, which is a little bit confussing.
