@@ -1,5 +1,7 @@
 ---
-layout: blog
+title: "Some title"
+author: "First and lastname"
+layout: post
 topic: "01"
 short-topic: Asking Good Questions
 due-date: 2022-01-27
